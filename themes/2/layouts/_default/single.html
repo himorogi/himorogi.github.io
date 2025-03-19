@@ -1,0 +1,19 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main>
+
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    &nbsp;&nbsp;/&nbsp;&nbsp;
+    <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.LinkTitle }}</a>
+    &nbsp;&nbsp;/&nbsp;&nbsp;
+    {{ .Page.Title }}
+  </div>
+
+  {{partial "article.html" .}}
+
+
+</main>
+{{ end }}

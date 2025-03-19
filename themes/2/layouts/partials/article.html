@@ -1,0 +1,70 @@
+
+  <article>
+    {{ if .Draft }}《下書き》{{ end }}
+
+    <h1 class="title">{{ .Title }}</h1>
+
+    {{ if eq .Params.toc true }}{{ .TableOfContents }}{{ end }}
+
+    {{ range .Pages }}
+      {{ partial "render-content.html" . }}
+    {{ end }} 
+    {{ partial "render-content.html" . }}
+
+
+    {{ if eq .Section "posts"}}
+    <aside class="page-info">
+      <div>
+        <time>{{ .Date | time.Format .Site.Params.date_format }}</time>
+        {{if .Params.lastmod }}
+            <span> / 最終更新 <time>{{ .Lastmod | time.Format .Site.Params.date_format }}</time></span>
+        {{ end }}
+      </div>
+        {{ with .GetTerms "tags" }}
+          <div>
+              {{ range . }}
+                  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>&nbsp;
+              {{ end }}
+          </div>
+          {{ end }}
+          <div>
+              {{ .Content | strings.CountRunes }}文字
+          </div>
+      </aside>
+    {{ end }}
+
+  </article>
+
+  {{ if eq .Section "images"}}
+  <div class="single-page-nav">
+
+    {{ with  .Parent.Pages.Next . }}
+        <a href="{{ .RelPermalink }}">
+            <span>←</span>
+        </a>
+    {{ else }}
+        <span disabled>←</span>
+    {{ end }}
+
+    {{ $counter := add (len .Parent.Pages) 1 }}
+    {{ $currentPath := .Page.RelPermalink}}
+      {{ range .Parent.Pages}}
+        {{ $counter = sub $counter 1 }}
+          {{if eq $currentPath .RelPermalink}}
+          <span class="num">
+          {{$counter | printf "%#o" }}
+        </span>  
+        {{ end }}
+      {{ end }}
+
+
+      {{ with  .Parent.Pages.Prev . }}
+          <a href="{{ .RelPermalink }}">
+              <span>→</span>
+          </a>
+      {{ else }}
+          <span disabled>→</span>
+      {{ end }}
+
+  </div>
+  {{ end }}

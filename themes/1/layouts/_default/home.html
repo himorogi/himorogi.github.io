@@ -1,0 +1,80 @@
+{{ define "main" }}
+<main>
+  {{ with resources.GetMatch "images/topimg*" }}
+  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" style="width: 100%;max-height: max(30vw, 250px);object-fit: cover;">
+  <br><br>
+    {{ end }}
+
+  Last modified: 
+  {{ range first 1 .Site.Pages }}
+  <time>{{ .Date | time.Format .Site.Params.date_format }}</time>
+{{ end }}
+
+
+  {{ with .Site.GetPage "/images" }}
+  <h2>{{ .LinkTitle }}</h2>
+  {{ range .Pages }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="new" data-date="{{.Date | time.Format .Site.Params.date_format_data}}"></span>
+    &nbsp;
+  {{ end }}
+  </div>
+
+  {{ end }}
+
+  {{ with .Site.GetPage "/posts" }}
+  <h2>{{ .LinkTitle }}</h2>
+
+  {{ range .Pages }}
+  <div class="blog-posts">
+    <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time>
+    <span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="new" data-date="{{.Date | time.Format .Site.Params.date_format_data}}"></span>
+    </span>
+  </div>
+  {{ end }}
+  {{ end }}
+
+  {{ with .Site.Taxonomies }}
+  {{ $numberOfTerms := 0 }}
+  {{ range $taxonomy, $terms := . }}
+  {{ $numberOfTerms = len . | add $numberOfTerms }}
+  {{ end }}
+
+  {{ if gt $numberOfTerms 0 }}
+  {{ range $taxonomy, $terms := . }}
+  {{ with $terms }}
+  <h2>{{ .Page.LinkTitle }}</h2>
+  {{ range $term, $weightedPages := . }}
+  <a href="{{ .Page.RelPermalink }}">#{{ .Page.LinkTitle }}</a>
+  <sup>{{ .Count }}</sup>&nbsp;
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  <hr>
+  {{ .Content }}
+
+</main>
+
+<script>
+      const now = new Date(); 
+      const today = now.getTime();
+
+     const targetDate = document.querySelectorAll('.new[data-date]');
+    //  console.log(today)
+
+    targetDate.forEach((update) => {
+       var dataDate = new Date(update.dataset.date);
+       dataDate.setDate(dataDate.getDate() + 3);
+       var dataDate = dataDate.getTime();
+       if(today < dataDate){
+        //  console.log(dataDate)
+         update.style.display = 'inline';
+       }
+   });
+
+</script>
+{{ end }}

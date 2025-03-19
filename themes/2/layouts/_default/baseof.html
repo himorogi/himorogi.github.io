@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon/favicon.ico?v=2">
+
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "css/style.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&display=swap" rel="stylesheet">
+<body>
+  <header>
+    <nav>
+      <h1><a href="/">{{ .Site.Title }}</a></h1>
+      <span></span>
+      {{- range site.Menus.main }}
+      <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+      {{- end }}
+    </nav>
+  </header>
+  {{ block "main" . }}
+  {{ end }}
+  <footer></footer>
+  {{ with resources.Get "js/main.js" }}
+  {{ with . | fingerprint "sha256" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+{{ partial "syukujitsu-sekki.html" . }}
+
+
+</body>
+
+</html>

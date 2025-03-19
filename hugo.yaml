@@ -1,0 +1,76 @@
+baseURL: https://example.org/
+languageCode: ja
+title: HMLOG
+#hasCJKLanguage: true
+# sectionPagesMenu: main
+
+theme: 2
+
+params:
+  date_format: "2006年1月2日 15:04 PM"
+  date_format_2: "2006-01-02"
+  date_format_data: "2006/01/02 15:04"
+  site:
+    baseurl: https://himorogi.github.io
+    
+frontmatter:
+  lastmod:
+  - lastmod
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+  path: page
+
+disableKinds:
+- rss
+- sitemap
+- taxonomy
+
+taxonomies:
+  tag: tags
+  year: year
+  # main: main
+
+permalinks:
+  term:
+    tags: /posts/:slug/
+    year: /posts/:slug/
+    main: /images/:slug/
+
+
+
+markup:
+  tableOfContents:
+    endLevel: 6
+    ordered: true
+    startLevel: 2
+  goldmark:
+      parser:
+        attribute:
+          block: true
+          title: true
+      # wrapStandAloneImageWithinParagraph: false
+      renderHooks:
+        image:
+          enableDefault: true
+      renderer:
+        hardWraps: true
+        unsafe: true
+# menus:
+#   main:
+#   - name: Home
+#     pageRef: /
+#     weight: 10
+#   - name: Products
+#     pageRef: /products
+#     weight: 20
+#   - name: Services
+#     pageRef: /services
+#     weight: 30
+
+
+privacy:
+  youTube:
+    disable: false
+    privacyEnhanced: true

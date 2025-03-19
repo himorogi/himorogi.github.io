@@ -1,0 +1,95 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+<article>
+  <h1 class="marquee">
+    <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+    <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+  </h1>
+  {{ partial "render-content.html" . }}
+
+</article>
+</main>
+
+
+<style>
+  .about-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    /*image-rendering: pixelated;
+    background: repeating-linear-gradient(-45deg, #ffffff55, #ffffff55 2px, transparent 2px, transparent 10px);*/
+
+    >* {
+      flex: 1 1 max-content;
+      max-width: 100%;
+
+    }
+
+    h1 {
+      flex: 100%;
+      line-height: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    p:first-of-type {
+      flex: 1 1 70%;
+    }
+
+  }
+
+  .marquee {
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    font-size: min(1.5rem, 4.5vw);
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 1em;
+    }
+  }
+
+  .marquee span {
+    display: inline-block;
+    width: max-content;
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s steps(30, jump-end) infinite both;
+    right: 0;
+    line-height: 1;
+  }
+
+  .marquee span:last-of-type {
+    animation: marquee2 15s steps(30, jump-end) infinite both;
+
+  }
+
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
+
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+{{ end }}

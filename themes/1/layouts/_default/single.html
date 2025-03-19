@@ -1,0 +1,75 @@
+{{ define "title" }}
+{{ .Title }}  🍙 {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main>
+
+  <section>
+    <div class="breadcrumb">
+      <a href="/">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;{{ .CurrentSection.LinkTitle }}&nbsp;-&nbsp;{{ .Page.Title }}
+    </div>
+
+
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <aside>
+     <div class="page-info">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar4" viewBox="0 0 16 16">
+        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+      </svg>&nbsp;<time>{{ .Date | time.Format
+        .Site.Params.date_format }}</time>
+     </div>
+        {{ if .Page.Params.lastmod }}
+        <div class="page-info">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+          <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+        </svg>&nbsp;<time>{{ .Lastmod | time.Format
+          .Site.Params.date_format }}</time>
+        </div>
+
+          {{ end }}
+          
+
+      {{ with .GetTerms "tags" }}
+      <div class="page-info">
+      {{ range . }}
+      <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>&nbsp;
+      {{ end }}
+    </div>
+      {{ end }}
+
+
+
+    </aside>
+  </section>
+
+  <div class="single-page-nav">
+    {{ with .NextInSection }}
+
+
+    <a href="{{ .RelPermalink }}" class="button">
+      <span class="arrow" style="display: inline-block;transform: rotate(180deg);"></span> 
+      <span class="nav-title">Prev</span><br>
+      <span style="font-size: .9em;">{{ .Title }}</span>
+    </a>
+    {{ else }}
+    <span></span>
+    {{ end }}
+    {{ with .PrevInSection }}
+
+
+    <a href="{{ .RelPermalink }}" class="button">
+      <span  class="nav-title">Next</span> <span class="arrow"></span><br>
+      <span style="font-size: .9em;">{{ .Title }}</span>
+    </a>
+    {{ else }}
+    <span></span>
+    {{ end }}
+
+
+  </div>
+
+</main>
+{{ end }}

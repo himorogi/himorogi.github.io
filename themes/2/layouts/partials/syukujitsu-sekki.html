@@ -1,0 +1,45 @@
+{{ $sj_data := dict }}
+{{ with $file := "syukujitsu.csv" }}
+{{ with resources.Get $file }}
+  {{ $sj_data = . | transform.Unmarshal  }}
+  {{ end }}
+{{ end }}
+
+
+{{$syukujitsu := dict }}
+
+{{ range $k, $v := $sj_data }}
+
+    {{ range $v}}    
+    {{ $regex := print "^" now.Year}}
+        {{ if findRE $regex . }}
+
+            {{ $syukujitsu  = merge $syukujitsu (dict $v . ) }}
+
+        {{ end }}
+    {{end }}
+    
+{{ end }}
+
+{{ $sk_data := dict }}
+{{ with $file := "sk2025.csv" }}
+{{ with resources.Get $file }}
+  {{ with $sk_data = . | transform.Unmarshal }}
+
+  {{ end }}
+  {{ end }}
+{{ end }}
+
+<script>
+  const syukujitsu = [{{ range $k, $v := $syukujitsu }}'{{$k}}', {{end}}];
+
+  const calenderDate = document.querySelectorAll('span[data-date]');
+
+
+  calenderDate.forEach((item) => {
+      if( 1 < syukujitsu.indexOf(item.dataset.date)){
+          item.classList.add('syuku');
+      }
+    });
+
+  </script>

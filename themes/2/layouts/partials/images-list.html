@@ -1,0 +1,63 @@
+{{ $counter := add (len .Pages) 1 }}
+
+{{/*  <div class="sort">
+  <span>≡↓</span>
+</div>  */}}
+    {{ range .Pages }}
+    {{ $counter = sub $counter 1 }}
+
+
+        <a href="{{.RelPermalink }}" class="images-item">
+            <div class="image-wrap">
+              {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
+              <img src="/placehold.png" data-src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+              {{ else }}
+              <img src="/placehold.png" data-src="/placehold.png" width="500" height="500" loading="lazy">
+
+              {{ end }}
+            </div>
+
+          <div class="images-info">
+            <div>
+              <div class="title">{{ .Title }}</div>
+              <div class="category">{{ .Params.category }}</div>
+            </div>
+            
+            <div class="description">{{ .Params.description }}</div>
+            </div>
+ 
+           <div class="count">
+            <div class="count-page">{{ $counter | printf "%#o"}}</div>
+
+
+            <div class="count-image">
+              <div>
+                {{ $headings := slice }}
+    
+                {{range .Pages }}
+                {{ $heading := findRE `#+\s(.*)` .RawContent }}
+                {{ $headings = $headings | append $heading}}
+              {{end}}
+              {{ $heading := findRE `#+\s(.*)` .RawContent }}
+              {{ $headings = $headings | append $heading}}
+              {{ range $headings }}
+              {{/*  {{trim . "\n# "}}  */}}
+              {{ end }}
+               </div>
+              {{with .Params.count_images }}
+              {{ range seq . }}＊{{ end }}
+              {{ else }} 
+             
+              {{with findRE `(?s)!\[.*?\]\(.*?\)`  .RawContent  }} 
+              {{ range . }}＊{{ end }}
+              {{ end }}
+              {{ end }}
+
+            </div>
+           </div>
+
+        </a>
+
+
+
+    {{ end }}
