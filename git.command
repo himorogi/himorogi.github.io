@@ -1,2 +1,6 @@
 cd `dirname $0`
-hugo server --bind=192.168.11.2 --baseURL=http://192.168.11.2 --port=1313 -D --renderToMemory --disableFastRender
+git add --all
+git commit -m "Update"
+git branch -M main
+git remote add origin git@github.com:himorogi/himorogi.github.io.git
+git push -u origin main

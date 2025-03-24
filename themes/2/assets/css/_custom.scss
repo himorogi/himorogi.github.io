@@ -65,8 +65,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         order: -1;
-
-        gap: 0 2rem;
+        gap: 2rem;
         >*{
             flex: auto;
             margin: 0 auto;
@@ -86,7 +85,9 @@
             justify-content: space-between;
             margin-bottom: .5rem;
         }
-
+        .calendar-today{
+            margin-bottom: 1rem;
+        }
         .calendar-date {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
