@@ -62,13 +62,13 @@
 .posts-side-widgets {
     font-size: .9rem;
     display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        order: -1;
-        gap: 2rem;
+    order: -1;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
         >*{
-            flex: auto;
-            margin: 0 auto;
+            margin: 0 auto 1rem;
         }
     #moon {
         img {
@@ -78,25 +78,26 @@
     }
 
     #calendar {
-        flex: 1 1 10rem;
+        flex: 0 0 10rem;
         .calendar-title {
-            font-size: .9rem;
+            font-size: .75rem;
+
             display: flex;
             justify-content: space-between;
             margin-bottom: .5rem;
         }
         .calendar-today{
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
         .calendar-date {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: repeat(6, 1fr);
             justify-items: center;
-            gap: .5em 0;
+            gap: .3rem;
+            font-size: .75rem;
 
             span {
-                font-size: .8rem;
 
                 &.syuku,
                 &:nth-of-type(7n - 6) {
@@ -291,6 +292,5 @@
 @media screen and (max-width: 60rem) {
     .posts-main{
         flex-direction: column;
-
     }
 }
