@@ -39,6 +39,11 @@ layout: template/_about
 [![](ribose.png)](https://ribo.zone)
 [![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/)
 ![](yarukinonai_site.jpg)
-<br>
 
+..........................................
+
+[TAKEHIRO TEZUKA](https://takehirotezuka.com)
+[Tricera Trampoline](https://www.youtube.com/@triceratrampoline)
+（サイトとかデザインとか作りました。[これ](https://youtu.be/fHzIl2ieqTI?si=2MUtXtZ3ErKoeQL0)は私が描きました。）
+<br>
 *There are many things in our society that have meaning to some people and no meaning to others...*
