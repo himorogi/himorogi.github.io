@@ -39,11 +39,27 @@ layout: template/_about
 [![](ribose.png)](https://ribo.zone)
 [![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/)
 ![](yarukinonai_site.jpg)
+[![](zakonebanner.jpg)](http://home.netyou.jp/ss/zakone/top.html)
 
 ..........................................
 
 [TAKEHIRO TEZUKA](https://takehirotezuka.com)
 [Tricera Trampoline](https://www.youtube.com/@triceratrampoline)
 （サイトとかデザインとか作りました。[これ](https://youtu.be/fHzIl2ieqTI?si=2MUtXtZ3ErKoeQL0)は私が描きました。）
+
+..........................................
+
+Flashエミュレーター(Chrome拡張あり)
+[Ruffle](https://ruffle.rs/)
+読めます。ぜひ。
+
+ 『Sourire』
+https://www.arakishingo.com/pc/pieces/sourire/vol01/
+https://www.arakishingo.com/pc/pieces/sourire/vol02/
+https://www.arakishingo.com/pc/pieces/sourire/vol03/
+https://www.arakishingo.com/pc/pieces/sourire/vol04/
+
+
 <br>
+
 *There are many things in our society that have meaning to some people and no meaning to others...*
