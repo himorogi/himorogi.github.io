@@ -13,6 +13,7 @@ thumb: desk/images/desk2.png
 
 ネットの片隅に存在しているあんまり意味のないサイト。主な内容は制作物とブログ、その他メモや記録も目的としています。誤字脱字や真偽のほどはあんまり意味がないサイトなのであしからず。暇な時に更新します。
 
+*There are many things in our society that have meaning to some people and no meaning to others.*
 
 - サイト名　HMLOG　
 - URL　{{< param "site.baseurl" >}}
@@ -78,6 +79,4 @@ https://www.arakishingo.com/pc/pieces/sourire/vol03/
 https://www.arakishingo.com/pc/pieces/sourire/vol04/
 
 
-<br>
 
-*There are many things in our society that have meaning to some people and no meaning to others...*
