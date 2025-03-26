@@ -3,10 +3,7 @@ title: About
 date: 2022-08-25T21:30:04+08:00
 menus: main
 layout: template/_about
-# build:
-#   list: never
-#   render: never
-
+thumb: desk/images/desk2.png
 ---
 
 

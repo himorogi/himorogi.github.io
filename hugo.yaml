@@ -1,7 +1,7 @@
 baseURL: https://example.org/
 languageCode: ja
 title: HMLOG
-#hasCJKLanguage: true
+hasCJKLanguage: true
 # sectionPagesMenu: main
 
 theme: 2
@@ -12,6 +12,8 @@ params:
   date_format_data: "2006/01/02 15:04"
   site:
     baseurl: https://himorogi.github.io
+    description: あんまり意味のないサイト
+
     
 frontmatter:
   lastmod:
