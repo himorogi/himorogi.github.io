@@ -16,7 +16,7 @@ thumb: desk/images/desk2.png
 
 - サイト名　HMLOG　
 - URL　{{< param "site.baseurl" >}}
-- 管理人　やる気ないです [Neocities😿](https://mild.neocities.org)
+- 管理人　やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](Profile_A5-1.jpg)
 - [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー
 - 内容のシェア・引用の場合は出典元を明記すること
