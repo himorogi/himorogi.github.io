@@ -1,7 +1,7 @@
 ---
 date: 2025-02-06T18:34:07+0900
 title: TREES
-thumb: tree_logo
+thumb: tree_logo.png
 main: Illustration
 
 category: Illustrations
