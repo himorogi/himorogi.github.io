@@ -5,7 +5,7 @@
 {{- end }}
 
 {{- with or .Title site.Title site.Params.title | plainify }}
-  <meta property="og:title" content="{{ . }}">
+  <meta property="og:title"  content="{{ $.Site.Title}} | {{ . }}">
 {{- end }}
 
 {{- if .IsHome }}
@@ -54,7 +54,7 @@
         <meta property="og:image"  content="{{ $.Site.BaseURL }}{{ index . 1 }}">
     {{ end }}
 {{ else if $images :=  .Resources.ByType "image" }}
-    {{ range $images | first 1 }}
+    {{ range $images | last 1 }}
         <meta property="og:image"  content="{{ $page }}{{ .Name }}">
     {{ end }}
 {{ else }}

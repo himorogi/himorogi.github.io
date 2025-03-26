@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
 
   {{/*  Favicon  */}}
   <link rel="icon" href="/favicon/favicon.ico?v=2">

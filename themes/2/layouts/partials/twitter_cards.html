@@ -7,12 +7,11 @@
     <meta name="twitter:image" content="{{ $page }}{{ .Params.thumb }}">
 {{- else if $images := findRESubmatch $regex (.Content | safeHTML)}}
     {{ range $images | first 1}}
-        
         <meta name="twitter:card" content="summary">
         <meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ index . 1 }}">
     {{ end }}
 {{ else if $images :=  .Resources.ByType "image" }}
-    {{ range $images | first 1 }}
+    {{ range $images | last 1 }}
         <meta name="twitter:card" content="summary">
         <meta name="twitter:image" content="{{ $page }}{{ .Name }}">
     {{ end }}
@@ -22,7 +21,7 @@
 {{- end }}
 
 {{- with or .Title site.Title site.Params.title | plainify }}
-  <meta name="twitter:title" content="{{ . }}">
+  <meta name="twitter:title" content="{{ $.Site.Title}} | {{ . }}">
 {{- end }}
 
 {{- if .IsHome }}
