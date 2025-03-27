@@ -4,7 +4,7 @@ title: TREES
 thumb: tree_logo.png
 main: Illustration
 
-category: Illustrations
+category: Illustration
 description: 木のイラストレーションと象徴としての木について
 count_images: 5
 

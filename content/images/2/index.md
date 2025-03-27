@@ -1,21 +1,21 @@
 ---
-date: 2025-01-24T11:43:50+09:00
-title: 数列、比
-thumb: 1-1.png
+date: 2025-03-27T17:39:42+0900
+title: 3月のユメ
+thumb: 1.jpg
 main: Illustration
-draft: true
-description: 数列と数比ないし分割法のまとめとその応用
-category: Drawing
-toc: true
+description: 白昼夢の中で
+category: illustration
+draft: true 
 ---
 
 
-## まとめ
+![](1.jpg)
+![](3.jpg)
 
-### 数列
+## Over the Rainbow
+なつこさんについて書こうと思う。
 
-**bbb**
-aaa
+<br>
 
-### 数比
-#### 分割法
+![仮面のこころ](2.jpg)
+
