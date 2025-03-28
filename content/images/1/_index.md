@@ -2,9 +2,8 @@
 date: 2025-02-06T18:34:07+0900
 title: TREES
 thumb: tree_logo.png
-main: Illustration
 
-category: Illustration
+categories: Illustrations for an allegory
 description: 木のイラストレーションと象徴としての木について
 count_images: 5
 

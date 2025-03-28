@@ -4,6 +4,12 @@
     }
 }
 
+.card{
+    padding: 1rem;
+    border: var(--border);
+    outline: var(--border);
+    outline-offset: -.25rem;
+}
 
 
 .single-page-nav,
