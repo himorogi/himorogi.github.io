@@ -32,8 +32,9 @@ Title
 Year
 : 2025
 
-Application
+Software
 : Photoshop
 
 Reference
 : 西洋シンボル辞典，G.ハインツ＝モーア，八坂書房，1994
+: [ギリシア神話・伝説ノート](http://web.kyoto-inet.or.jp/people/tiakio/antiGM/antiGM.html) Barbaroi!

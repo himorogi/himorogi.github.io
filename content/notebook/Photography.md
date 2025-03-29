@@ -1,5 +1,6 @@
 ---
 date: 2025-03-28T15:29:29+0900
+lastmod: 2025-03-29T11:09:27+0900
 title: 写真史
 
 # draft: true
@@ -34,7 +35,7 @@ AC 16
 AC 17
 : 1646年『光と影の大いなる術』イエズス会士　アタナシウス・キルヒャー
   : カメラ・オブスクラの**図解**（移動式タイプ）
-  : ![Athanasius Kircher, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/8/85/1646_Athanasius_Kircher_-_Camera_obscura.jpg)
+  : >![Athanasius Kircher, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/1646_Athanasius_Kircher_-_Camera_obscura.jpg/330px-1646_Athanasius_Kircher_-_Camera_obscura.jpg)
 : レフレックス型　カメラ・オブスクラ
   : より小型でレンズからの光を鏡に反射させスクリーンに映し出す仕組み
 : 視覚に関するテクノロジーの発達から、カメラ・オブスクラが科学や芸術で活用される。
@@ -50,6 +51,9 @@ AC 17
   : タゲレオタイプ：1839年フランスのタゲールが考案。肖像写真に用いられた
   
 AC 18
+: 1826年 ニエプス『ル・グラの窓からの眺め』
+  : カメラ・オブスクラを使用した最古の現存する写真
+  : >![Nicéphore Niépce, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg/330px-View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg)
 : 1840年代初頭
   : パリ、ロンドン、NY、ベルリン、ハンブルクに最初の肖像写真スタジオが開設され、のちに地方都市へも波及する。
   : 長時間露光のため数秒から数十秒の間被写体の人物は動けない→堅く儀式的な写真
@@ -67,11 +71,11 @@ AC 18
     : 1860年代をピークに流行（安価）→広い層に普及
 : 1856年〜
   : ルイス・キャロル（少女写真）
-    : ![Lewis Carroll, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/0/05/Alice_Liddell_2.jpg)
+    : >![Lewis Carroll, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Alice_Liddell_2.jpg/166px-Alice_Liddell_2.jpg)
   : ジュリア・マーガレット・キャメロン（近親者のポートレート）
 : 1857年　『人生の二つの道』レイランダー　**合成写真**、ルネサンス絵画的、寓意的、演出的
-  :   ![Oscar Gustave Rejlander, British, born Sweden, 1813–1875, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/3/34/Oscar_Gustave_Rejlander%2C_The_Two_Ways_of_Life%2C_1857.jpg)
-  参考：[Revised Edition “オスカー・ギュスタヴ・レイランダーの挑発” by 甲斐義明 | documents | photographers’ gallery](https://pg-web.net/documents/revised-edition-050901/)
+  : >![Oscar Gustave Rejlander, British, born Sweden, 1813–1875, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Oscar_Gustave_Rejlander%2C_The_Two_Ways_of_Life%2C_1857.jpg/330px-Oscar_Gustave_Rejlander%2C_The_Two_Ways_of_Life%2C_1857.jpg)
+  : 参考：[Revised Edition “オスカー・ギュスタヴ・レイランダーの挑発” by 甲斐義明 | documents | photographers’ gallery](https://pg-web.net/documents/revised-edition-050901/)
 : 1869年『写真における絵画的効果』ヘンリー・ピーチ・ロビンソン
   : 人工的な合成を勧める。絵的に美しいものを目指した写真
 : 1855年頃 ピクトリアリズム

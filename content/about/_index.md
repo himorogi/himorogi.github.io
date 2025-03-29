@@ -17,8 +17,8 @@ thumb: desk/images/desk2.png
 
 - サイト名　HMLOG　
 - URL　{{< param "site.baseurl" >}}
-- 管理人　やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](Profile_A5-1.jpg)
-- [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
+- 管理人　やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](prof)
+- 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー
 - 内容のシェア・引用の場合は出典元を明記すること
 
@@ -40,15 +40,11 @@ thumb: desk/images/desk2.png
 <br><br>
 {{< /HTML >}}
 
-<img src="Spotify.jpg" style="max-width: 180px;">
-
-[<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
-{style="text-align: center"}
-
+<img src="Spotify.jpg" style="max-width: 180px;">　[<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
 
 ---
 
-## Bookmarks
+## ブックマーク
 [世界史の窓](https://www.y-history.net/) 
 [国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html)
 [車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/)
@@ -59,6 +55,7 @@ thumb: desk/images/desk2.png
 ![](yarukinonai_site.jpg)
 [![雑魚寝](zakonebanner.jpg)](http://home.netyou.jp/ss/zakone/top.html "雑魚寝")
 [![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
+
 
 ..........................................
 
@@ -79,4 +76,5 @@ https://www.arakishingo.com/pc/pieces/sourire/vol03/
 https://www.arakishingo.com/pc/pieces/sourire/vol04/
 
 
-
+> ![Sourire, vol01 Page 6, Shingo Araki](Sourire.jpg)
+> こっそり書いてきたまんがも人に知られてしまったが　<span style="text-emphasis:dot;">いねむり</span>の時に<ruby>度々<rt>たびたび</rt></ruby>みるふしぎな夢の話はまだ誰にも話してなかった。いつかまんがのストーリーづくりに役立つと思って....

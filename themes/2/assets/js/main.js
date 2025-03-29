@@ -21,6 +21,8 @@ const startDay = startDate.getDay() // 月の最初の日の曜日を取得
 let dayCount = 1 // 日にちのカウント
 let calendarHtml = '' // HTMLを組み立てる変数
 
+calendarHtml += `<div class="calendar-today">${year}/${month}/${today} (${weeks[date.getDay()]})</div>`;
+
 calendarHtml += '<div class="calendar-title"><span>' + monthStr[month - 1] + ', ' + year + '</span></div>';
 calendarHtml += '<div class="calendar-date">';
 
@@ -45,7 +47,6 @@ for (let w = 0; w < 6; w++) {
 
 }
 calendarHtml += '</div>';
-calendarHtml += `<div class="calendar-today">${year}/${month}/${today} (${weeks[date.getDay()]})</div>`;
 
 document.querySelector('.posts-main #calendar').innerHTML = calendarHtml
 
