@@ -8,6 +8,7 @@
 
 if(document.querySelector('.posts-main #calendar')){
 
+
 const weeks = ['日', '月', '火', '水', '木', '金', '土']
 const date = new Date()
 const year = date.getFullYear()
@@ -50,5 +51,14 @@ calendarHtml += '</div>';
 
 document.querySelector('.posts-main #calendar').innerHTML = calendarHtml
 
+
+
+// fetch('https://api.sunrise-sunset.org/json?lat=35.6581&lng=139.7414&date=today&tzid=Asia/Tokyo', {
+// 	method: 'GET', // HTTPメソッドとしてGETを指定
+// })
+
+// 	.then((res) => res.json())
+// 	.then((data) => console.log(data));
+
 }
-  
+

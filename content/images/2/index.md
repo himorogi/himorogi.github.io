@@ -7,8 +7,9 @@ categories: Illustrations about dreams
 # draft: true 
 ---
 
-![3月のユメ](3.jpg) 
-[The Great Red Dragon and the Beast from the Sea ](https://artsandculture.google.com/asset/the-great-red-dragon-and-the-beast-from-the-sea-0000/NgGp3PH5_BqlDg)(ウィリアム・ブレイク)
+![The Shade of the Sun](3.jpg) 
+*太陽の翳 / 美しいものが引きつける強い力*
+参考：[The Great Red Dragon and the Beast from the Sea ](https://artsandculture.google.com/asset/the-great-red-dragon-and-the-beast-from-the-sea-0000/NgGp3PH5_BqlDg)(ウィリアム・ブレイク)
 
 <br><br>
 
@@ -69,8 +70,11 @@ categories: Illustrations about dreams
 「こんな世界なんて亡んてしまえ！」叫んだ。ただの換気扇に向かって。
 地震があった。マグニチュード9.0。津波、放射能。俺はアパートで一人地響きを聞いていた。
 
+***
+
 　　　*ぼくの心にふる雨はそれからやむことがない……*
 
+台所の机で聴いた最後のことば。この雨をとめてくれ。
 
 </div>
 

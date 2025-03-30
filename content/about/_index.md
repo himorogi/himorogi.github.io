@@ -47,16 +47,18 @@ thumb: desk/images/desk2.png
 ## ブックマーク
 [世界史の窓](https://www.y-history.net/) 
 [国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html)
+[今日のほしぞら(国立天文台 暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)
 [車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/)
 [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)
 
-[![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")
+[![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")　
 [![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
 ![](yarukinonai_site.jpg)
-[![雑魚寝](zakonebanner.jpg)](http://home.netyou.jp/ss/zakone/top.html "雑魚寝")
 [![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
 
-
+Special Thanks
+[Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
+[星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript
 ..........................................
 
 [TAKEHIRO TEZUKA](https://takehirotezuka.com)
