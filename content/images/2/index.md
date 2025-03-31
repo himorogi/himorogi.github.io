@@ -7,15 +7,16 @@ categories: Illustrations about dreams
 # draft: true 
 ---
 
-![The Shade of the Sun](3.jpg) 
+![](3.jpg) 
 *太陽の翳 / 美しいものが引きつける強い力*
 参考：[The Great Red Dragon and the Beast from the Sea ](https://artsandculture.google.com/asset/the-great-red-dragon-and-the-beast-from-the-sea-0000/NgGp3PH5_BqlDg)(ウィリアム・ブレイク)
 
 <br><br>
 
-![天使の結婚](1.jpg)
+![](1.jpg)
+天使の結婚
 
-<br>
+<br><br>
 
 
 <div class="card">

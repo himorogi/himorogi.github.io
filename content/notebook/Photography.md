@@ -95,7 +95,8 @@ AC 18
 - ローズ・セラヴィ
   - [彼女の独身者たちによって裸にされた花嫁、さえも](https://en.wikipedia.org/wiki/File:Duchamp_LargeGlass.jpg#/media/File:Duchamp_LargeGlass.jpg)
   - [（1）落下する水、（2）照明用ガス、が与えられたとせよ](https://en.wikipedia.org/wiki/File:Etant_donnes.jpg#/media/File:Etant_donnes.jpg)
-
+- デイビット・ホックニー 
+  >![https://www.myartbroker.com/artist-david-hockney/10-facts/10-facts-about-hockney-photo-collages](Hockney.jpg)
 ---
 
 {{% fnref 1 "近代写真の父。アメリカ近代画家ジョージア・オキーフの夫。" %}}
