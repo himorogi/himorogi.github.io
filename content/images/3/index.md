@@ -2,11 +2,11 @@
 date: 2025-04-01T20:01:59+0900
 title: 2021–23
 
-thumb: 1.png
+thumb: 3.jpeg
 main: Drawing
 
-categories:  Drawing
-description: 2021年から2023年に描いた作品
+categories:  Drawing 
+description: I had got lost in my room.
 
 ---
 
@@ -41,6 +41,8 @@ description: 2021年から2023年に描いた作品
 2023
 ![](8)
 
+![](Untitled.jpg)
+
 Title
 : {{< param "title" >}}
 
@@ -49,6 +51,7 @@ Year
 
 Material
 : Acrylic on paper
+: Didital painting
 
 Software
 : Photoshop
