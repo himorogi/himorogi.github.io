@@ -1,26 +1,56 @@
 ---
-date: 2025-03-28T22:41:24+0900
-title: A little bird fly away
+date: 2025-04-01T20:01:59+0900
+title: 2021–23
 
-thumb: 
-main: Illustration
+thumb: 1.png
+main: Drawing
 
-categories:  Animation
-description: 
-draft: true
+categories:  Drawing
+description: 2021年から2023年に描いた作品
 
 ---
 
+2021
+
+![](1)
+
+![](2_1)
+
+![](2_2)
+
+![](3)
+
+![](4)
+
+.
+.
+.
+<details>
+<summary></summary>
+
+2022
+![](5)
+![](6)
+![](7)
+
+</details>
+
+.
+.
+.
+2023
+![](8)
 
 Title
 : {{< param "title" >}}
 
 Year
-: 2025
+: 2021–23
+
+Material
+: Acrylic on paper
 
 Software
 : Photoshop
 
-Reference and Music
-: 鵺
 
