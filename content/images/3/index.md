@@ -51,7 +51,7 @@ Year
 
 Material
 : Acrylic on paper
-: Didital painting
+: Digital painting
 
 Software
 : Photoshop
