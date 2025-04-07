@@ -78,5 +78,5 @@ https://www.arakishingo.com/pc/pieces/sourire/vol03/
 https://www.arakishingo.com/pc/pieces/sourire/vol04/
 
 
-> ![Sourire, vol01 Page 6, Shingo Araki](Sourire.jpg)
+> ![Sourire vol01 (Page 6), Shingo Araki](Sourire.jpg)
 > こっそり書いてきたまんがも人に知られてしまったが　<span style="text-emphasis:dot;">いねむり</span>の時に<ruby>度々<rt>たびたび</rt></ruby>みるふしぎな夢の話はまだ誰にも話してなかった。いつかまんがのストーリーづくりに役立つと思って....
