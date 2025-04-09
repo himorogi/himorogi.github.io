@@ -15,18 +15,13 @@ thumb: desk/images/desk2.png
 
 *There are many things in our society that have meaning to some people and no meaning to others.*
 
-- サイト名　HMLOG　
-- URL　{{< param "site.baseurl" >}}
-- 管理人　やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](prof)
+- サイト名：　HMLOG　
+- URL：　{{< param "site.baseurl" >}}
+- 管理人： やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](prof)
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー
 - 内容のシェア・引用の場合は出典元を明記すること
 
-
-![](round_left.gif)
-![](aries.gif)![](gemini.gif)![](canis_major.gif)![](pisces.gif)![](orion.gif)![](crux.gif)
-![](round_right.gif)
-{style="display: inline-flex"}
 <br>
 {{< HTML >}}
 <a href="https://x.com/aa2295591843623" target="_blank" rel="noreferrer">
@@ -37,8 +32,13 @@ thumb: desk/images/desk2.png
 </a>&nbsp;
 <a href="https://www.pixiv.net/users/114372563" target="_blank" rel="noreferrer">Pixiv</a>&nbsp;&nbsp;
 <a href="https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link" target="_blank" rel="noreferrer">配布(Google Drive)</a>
-<br><br>
+<br>
 {{< /HTML >}}
+
+![](round_left.gif)
+![](aries.gif)![](gemini.gif)![](canis_major.gif)![](pisces.gif)![](orion.gif)![](crux.gif)
+![](round_right.gif)
+{style="display: inline-flex"}
 
 <img src="Spotify.jpg" style="max-width: 180px;">　[<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
 
