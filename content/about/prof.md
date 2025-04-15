@@ -32,3 +32,10 @@ date: 2025-03-29T11:37:29+0900
 
 [Amazonリスト](https://www.amazon.jp/hz/wishlist/ls/YFOWBL26M5ED?ref_=wl_share)
 
+### 好きな漫画
+- あしたのジョー　高森朝雄（梶原一騎）ちばてつや
+- 蛍三七子　ちばてつや
+- 青い鳥の神話　車田正美
+- 火の鳥　手塚治虫
+- 黄泉のツガイ　荒川弘
+- DEATH NOTE　大場つぐみ 小畑健
