@@ -50,6 +50,7 @@ thumb: desk/images/desk2.png
 [今日のほしぞら(国立天文台 暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)
 [車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/)
 [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)
+[アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com)
 
 [![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")　
 [![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
