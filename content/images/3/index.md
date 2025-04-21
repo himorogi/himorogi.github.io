@@ -12,7 +12,7 @@ description: I had got lost in my room.
 
 2021
 
-![](1)
+![生命の樹](1)
 
 ![](2_1)
 
@@ -25,23 +25,21 @@ description: I had got lost in my room.
 .
 .
 .
-<details>
-<summary></summary>
+
 
 2022
-![](5)
-![](6)
-![](7)
+![宇宙の林檎](5)
+![三種の神器](6)
+![梯子](7)
+![楽園](tumblr_820f0b2905764bf6632470c84e57675b_e26b92ec_1280)
 
-</details>
 
 .
 .
 .
 2023
-![](8)
-
-![](Untitled.jpg)
+![帰ってきた小石](8)
+![アザミ（Other me）](Untitled.jpg)
 
 Title
 : {{< param "title" >}}
