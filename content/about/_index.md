@@ -8,9 +8,6 @@ thumb: desk/images/desk2.png
 
 
 
-
-
-
 ネットの片隅に存在しているあんまり意味のないサイト。主な内容は制作物とブログ、その他メモや記録も目的としています。誤字脱字や真偽のほどはあんまり意味がないサイトなのであしからず。暇な時に更新します。
 
 *There are many things in our society that have meaning to some people and no meaning to others.*
@@ -88,15 +85,11 @@ thumb: desk/images/desk2.png
 [![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
 [![](yarukinonai_site.jpg)](https://reissuerecords.net "やる気のないサイト")
 [![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
+[![COMPASS LINK](bnn01.png)](https://compslink.jp "COMPASS LINK")
 
 Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
 [星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript
-..........................................
-
-[TAKEHIRO TEZUKA](https://takehirotezuka.com)
-[Tricera Trampoline](https://www.youtube.com/@triceratrampoline)
-（サイトとかタイトルデザインとか作りました。[これ](https://youtu.be/fHzIl2ieqTI?si=2MUtXtZ3ErKoeQL0)は私が描きました。）
 
 ..........................................
 
