@@ -6,7 +6,7 @@ thumb: thumb.jpg
 main: nimation
 
 categories:  Animation
-description: アートアニメーション 3:45
+description: アートアニメーション
 #draft: true
 
 ---
