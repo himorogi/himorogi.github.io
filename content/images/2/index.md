@@ -83,7 +83,6 @@ categories: Illustrations about dreams
 
 </div>
 
-プロポーズ、受けますよ。
 
 <br>
 
