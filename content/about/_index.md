@@ -14,30 +14,15 @@ thumb: desk/images/desk2.png
 
 - サイト名：　HMLOG　
 - URL：　{{< param "site.baseurl" >}}
-- 管理人： やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](prof)
+- 管理人： やる気ないです [Neocities😿](https://mild.neocities.org) [プロフィール](prof) 
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
-- リンクフリー
+- リンクフリー 
 - 内容のシェア・引用の場合は出典元を明記すること
 
-<br>
+
+[Pixiv](https://www.pixiv.net/users/114372563) [配布(Google Drive)](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)
+
 {{< HTML >}}
-<a href="https://x.com/aa2295591843623" target="_blank" rel="noreferrer" title="X">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.37a9.6 9.6 0 0 1-2.83.8 5.04 5.04 0 0 0 2.17-2.8c-.95.58-2 1-3.13 1.22A4.86 4.86 0 0 0 16.61 2a4.99 4.99 0 0 0-4.79 6.2A13.87 13.87 0 0 1 1.67 2.92 5.12 5.12 0 0 0 3.2 9.67a4.82 4.82 0 0 1-2.23-.64v.07c0 2.44 1.7 4.48 3.95 4.95a4.84 4.84 0 0 1-2.22.08c.63 2.01 2.45 3.47 4.6 3.51A9.72 9.72 0 0 1 0 19.74 13.68 13.68 0 0 0 7.55 22c9.06 0 14-7.7 14-14.37v-.65c.96-.71 1.79-1.6 2.45-2.61z"/></svg>
-</a>&nbsp;
-<a href="https://www.instagram.com/sanaesato0531/" target="_blank" rel="noreferrer" title="Instagram">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z"/></svg>
-</a>&nbsp;
-<a href="https://www.threads.net/@sanaesato0531" target="_blank" rel="noreferrer" title="Threads">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
-  <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
-</svg>
-</a>
-&nbsp;
-
-<a href="https://www.pixiv.net/users/114372563" target="_blank" rel="noreferrer" title="Pixiv">Pixiv</a>&nbsp;&nbsp;
-<a href="https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link" target="_blank" rel="noreferrer" title="Google Drive">配布(Google Drive)</a>
-<br>
-
 <p style="display: inline-flex">
   
     <img src="data:image/gif;base64,R0lGODlhEAAgAKIGAAAAAF5mikGJ//3v8tCvTLtVSP///wAAACH5BAEAAAYALAAAAAAQACAAAANSaLqs8KAxSKWhQECJccPBE0aL2G3O6V3U2KVqFb8m4Nry3BHdoP/A1uz20OiIP9+jEJyxHjwI8fljGZ1UbAdJehJdE4qyEo5xcK+zFGU5WT6QBAA7" width="16" height="32" loading="lazy">
@@ -95,7 +80,7 @@ Special Thanks
 
 Flashエミュレーター(Chrome拡張あり)
 [Ruffle](https://ruffle.rs/)
-読めます。ぜひ続きを。
+読めます。ぜひ。
 
  『Sourire』
 https://www.arakishingo.com/pc/pieces/sourire/vol01/

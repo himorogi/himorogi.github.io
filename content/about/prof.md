@@ -5,15 +5,7 @@ date: 2025-03-29T11:37:29+0900
 ---
 
 
-![](Profile_5.png)
-
-
-[鵺の鳴き声（YouTube）](https://youtu.be/ECY-h89ihTg?si=TPGLV51JWMOcmkZ_)　寂しそうな泣き声です。
-
-***
-
 1989年　東京都荒川区生まれ
-2008年　越谷北高等学校普通科文系 卒業
 2014年　多摩美術大学グラフィックデザイン学科 卒業
 
 小さな頃は夜驚症で泣き止むまで母に抱かれながら月眺めていたことをよく覚えている。アリス症候群は今も時々感じる。小さくなったり大きくなったり。
@@ -23,19 +15,21 @@ date: 2025-03-29T11:37:29+0900
 
 ### 読みたい本
 - 夜間飛行
+- 星の巡礼
 
 ### 欲しいもの
 - Hikari Saint Seiya- Araki Shingo artbook
 - 世界シンボル大事典 大修館書店
 - (神々の熱き戦いのVHS)
 
-[Amazonリスト](https://www.amazon.jp/hz/wishlist/ls/YFOWBL26M5ED?ref_=wl_share)
-
 ### 好きな漫画
 - あしたのジョー　高森朝雄（梶原一騎）ちばてつや
-- *蛍三七子*　ちばてつや
-- 青い鳥の神話　車田正美
+- **蛍三七子**　ちばてつや
+- **青い鳥の神話**　車田正美
 - 火の鳥　手塚治虫
 - 黄泉のツガイ　荒川弘
-- DEATH NOTE　大場つぐみ 小畑健
-- *CLOVER*　CLAMP
+- **CLOVER**　CLAMP
+
+---
+
+[鵺の鳴き声（YouTube）](https://youtu.be/ECY-h89ihTg?si=TPGLV51JWMOcmkZ_)　

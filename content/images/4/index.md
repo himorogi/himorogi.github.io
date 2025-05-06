@@ -7,7 +7,7 @@ main: nimation
 
 categories:  Animation
 description: アートアニメーション
-#draft: true
+draft: true
 
 ---
 
