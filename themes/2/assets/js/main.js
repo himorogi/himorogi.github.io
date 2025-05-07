@@ -53,12 +53,16 @@ document.querySelector('.posts-main #calendar').innerHTML = calendarHtml
 
 
 
-// fetch('https://api.sunrise-sunset.org/json?lat=35.6581&lng=139.7414&date=today&tzid=Asia/Tokyo', {
-// 	method: 'GET', // HTTPメソッドとしてGETを指定
-// })
+fetch('https://api.sunrise-sunset.org/json?lat=35.6581&lng=139.7414&date=today&tzid=Asia/Tokyo', {
+	method: 'GET', // HTTPメソッドとしてGETを指定
+})
 
-// 	.then((res) => res.json())
-// 	.then((data) => console.log(data));
-
+	.then((res) => res.json())
+	.then(data => {
+    const sunriseTime = document.createTextNode(data.results.sunrise);
+    document.getElementById('sunrise').appendChild(sunriseTime);
+    const sunsetTime = document.createTextNode(data.results.sunset);
+    document.getElementById('sunset').appendChild(sunsetTime);
+  });
 }
 

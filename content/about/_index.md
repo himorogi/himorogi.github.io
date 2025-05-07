@@ -20,7 +20,7 @@ thumb: desk/images/desk2.png
 - 内容のシェア・引用の場合は出典元を明記すること
 
 
-[Pixiv](https://www.pixiv.net/users/114372563) [配布(Google Drive)](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)
+[素材配布(Google Drive)](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)
 
 {{< HTML >}}
 <p style="display: inline-flex">
@@ -53,8 +53,7 @@ thumb: desk/images/desk2.png
 </p>
 {{< /HTML >}}
 
-
-[<img src="Spotify.jpg" style="max-width: 180px;">](https://open.spotify.com/user/ph30mv68jpxj9updhj46o12hl?si=ad278b81b9fc415f)　[<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
+[<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
 
 ---
 
@@ -68,7 +67,6 @@ thumb: desk/images/desk2.png
 
 [![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")　
 [![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
-[![](yarukinonai_site.jpg)](https://reissuerecords.net "やる気のないサイト")
 [![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
 [![COMPASS LINK](bnn01.png)](https://compslink.jp "COMPASS LINK")
 
