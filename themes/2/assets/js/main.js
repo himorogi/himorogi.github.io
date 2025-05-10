@@ -24,7 +24,7 @@ let calendarHtml = '' // HTMLを組み立てる変数
 
 calendarHtml += `<div class="calendar-today">${year}/${month}/${today} (${weeks[date.getDay()]})</div>`;
 
-calendarHtml += '<div class="calendar-title"><span>' + monthStr[month - 1] + ', ' + year + '</span></div>';
+calendarHtml += '<div class="calendar-title"><span>' + monthStr[month - 1] + ' ' + year + '</span></div>';
 calendarHtml += '<div class="calendar-date">';
 
 

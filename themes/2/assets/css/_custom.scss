@@ -80,7 +80,7 @@
         div{
             display: flex;
             align-items: center;
-
+            min-width: 16ch;
         }
         img {
             height: 1rem;
@@ -92,23 +92,23 @@
 
     #calendar {
         flex: 0 0 10rem;
+       
         .calendar-title {
-            font-size: .75rem;
+            font-size: .9rem;
 
             display: flex;
             justify-content: space-between;
             margin-bottom: .5rem;
-
-
         }
         .calendar-today{
-            margin-bottom: .6rem;
+            margin-bottom: 1rem;
             font-size: 115%;
             // border-top: var(--border);
             // border-bottom: var(--border);
             // padding: .3rem 0;
         }
         .calendar-date {
+
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-template-rows: repeat(6, 1fr);
