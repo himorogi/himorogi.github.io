@@ -14,16 +14,19 @@ thumb: desk/images/desk2.png
 
 - サイト名：　HMLOG　
 - URL：　{{< param "site.baseurl" >}}
-- 管理人： 元気です（[プロフィール](prof) / [Neocities😿](https://mild.neocities.org)）
+- 管理人： 烏山（[プロフィール](prof) / [Neocities](https://mild.neocities.org)）
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー 
 - 内容のシェア・引用の場合は出典元を明記すること
+<br>
 
-
-[素材配布(Google Drive)](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)
-
+SNSなど
+: [Threads](https://www.threads.com/@89__0531)…とっちらかっている
+  YouTube…準備中
+  [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
+  
 {{< HTML >}}
-<p style="display: inline-flex">
+<span style="display: inline-flex">
   
     <img src="data:image/gif;base64,R0lGODlhEAAgAKIGAAAAAF5mikGJ//3v8tCvTLtVSP///wAAACH5BAEAAAYALAAAAAAQACAAAANSaLqs8KAxSKWhQECJccPBE0aL2G3O6V3U2KVqFb8m4Nry3BHdoP/A1uz20OiIP9+jEJyxHjwI8fljGZ1UbAdJehJdE4qyEo5xcK+zFGU5WT6QBAA7" width="16" height="32" loading="lazy">
   
@@ -48,9 +51,7 @@ thumb: desk/images/desk2.png
   
     <img src="data:image/gif;base64,R0lGODlhEAAgAKIGAAAAAF5mikGJ//3v8rtVSNCvTP///wAAACH5BAEAAAYALAAAAAAQACAAAANRCArW/k2FxaCjc1lDFdFQJ4aSqDxiRl3mkkWtWolDy7WAfONAcaa8oEIgrAU/whiPmHQ1m6qXk7cTVk2vKw5mMla0TBC3k2VNTyTTRr2pth8JADs=" width="16" height="32" loading="lazy">
 
-
-
-</p>
+</span>
 {{< /HTML >}}
 
 [<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
@@ -65,14 +66,16 @@ thumb: desk/images/desk2.png
 [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)
 [アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com)
 
-[![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")　
+[![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")
 [![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
 [![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
-[![COMPASS LINK](bnn01.png)](https://compslink.jp "COMPASS LINK")
+[![ECHOES.](ECHOES_200x40b.png)](https://echoes.o0o0.jp/ "ECHOES.") [![よろずりんく](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")
 
-Special Thanks
+### Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
 [星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript
+[Takehiro Tezuka](https://takehirotezuka.com)
+
 
 ..........................................
 
