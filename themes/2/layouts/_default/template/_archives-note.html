@@ -1,0 +1,37 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+
+    <h1>{{ .Title }}</h1>
+    わたしノートとコンティニュー（スクラップ、ドローイング、かな〜り辛い時のメモなど）
+    <br><br>
+    <div style="
+        column-count: 4;
+        column-fill: balance;
+        column-gap: 0;
+    ">
+
+        {{ range .Resources.ByType "image" | collections.Shuffle }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
+        {{ end }}
+    </div>
+</main>
+<style>
+    body {
+        max-width: 100%;
+        background: rgb(34, 86, 255);
+        color: yellow;
+    }
+    header{
+    display: none;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        object-position: center;
+    }
+</style>
+{{ end }}
