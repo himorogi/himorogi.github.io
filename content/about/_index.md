@@ -12,9 +12,9 @@ thumb: desk/images/desk2.png
 
 *There are many things in our society that have meaning to some people and no meaning to others.*
 
-- サイト名：　HMLOG (Himorogu)
+- サイト名：HMLOG (Himorogu)
 - URL：　{{< param "site.baseurl" >}}
-- 管理人： <ruby>烏山 (Karasuyama)[プロフィール](prof) / [Neocities](https://mild.neocities.org)
+- 管理人： 烏山 (Karasuyama)[プロフィール](prof) / [Neocities](https://mild.neocities.org)
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー
   <img src="/hmlog_banner.png"> <img src="/hmlog_banner2.png">
