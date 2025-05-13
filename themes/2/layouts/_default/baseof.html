@@ -30,7 +30,8 @@
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 </head>
-{{ if not hugo.IsServer }}
+<body>
+  {{ if not hugo.IsServer }}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCKHDXEHEM"></script>
 <script>
@@ -41,7 +42,6 @@
   gtag('config', 'G-GCKHDXEHEM');
 </script>
 {{ end }}
-<body>
   <header>
     <nav>
       <h1><a href="/">{{ .Site.Title }}</a></h1>
