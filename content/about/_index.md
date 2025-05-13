@@ -18,13 +18,19 @@ thumb: desk/images/desk2.png
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー 
 - 内容のシェア・引用の場合は出典元を明記すること
+
+プライバシーポリシー
+: 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ます。この規約に関しての詳細はGoogleアナリティクスサービス利用規約のページやGoogleポリシーと規約ページをご覧ください。
+[プライバシーの開示に関するポリシー - アナリティクス ヘルプ](https://support.google.com/analytics/answer/7318509?hl=ja)
 <br>
 
 SNSなど
 : [Threads](https://www.threads.com/@89__0531)…とっちらかっている
   YouTube…準備中
   [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
-  
+
+
+
 {{< HTML >}}
 <span style="display: inline-flex">
   
