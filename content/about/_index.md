@@ -21,16 +21,11 @@ thumb: desk/images/desk2.png
   <img src="/hmlog_banner.png"> <img src="/hmlog_banner2.png">
 - 内容のシェア・引用の場合は出典元を明記すること
 
-プライバシーポリシー
-: 当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。このGoogleアナリティクスはデータの収集のためにCookieを使用しています。このデータは匿名で収集されており、個人を特定するものではありません。この機能はCookieを無効にすることで収集を拒否することが出来ます。この規約に関しての詳細はGoogleアナリティクスサービス利用規約のページやGoogleポリシーと規約ページをご覧ください。
-[プライバシーの開示に関するポリシー - アナリティクス ヘルプ](https://support.google.com/analytics/answer/7318509?hl=ja)
-<br>
 
 SNSなど
 : [Threads](https://www.threads.com/@89__0531)…とっちらかっている
   YouTube…準備中
   [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
-
 
 
 {{< HTML >}}
@@ -64,20 +59,14 @@ SNSなど
 
 [<img src="desk/images/desk2.png" style="width:300px;border: .05rem solid;">](desk)
 
+<br>
+
 ---
 
-## ブックマーク
-[世界史の窓](https://www.y-history.net/) 
-[国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html)
-[今日のほしぞら(国立天文台 暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)
-[車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/)
-[Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)
-[アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com)
+## Bookmarks
+[世界史の窓](https://www.y-history.net/)　[国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html)　[今日のほしぞら(国立天文台 暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)　[車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/)　[Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)　[アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com)
 
-[![RIBOSE](ribose.png)](https://ribo.zone "RIBOSE")
-[![ゆる〜いウェブリング](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング") [![リンゴーの同盟](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
-[![略字データベースまとめwiki](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")
-[![ECHOES.](ECHOES_200x40b.png)](https://echoes.o0o0.jp/ "ECHOES.") [![よろずりんく](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")
+[![](ribose.png)](https://ribo.zone "RIBOSE")[![](3296cc04f89e61a1.gif)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](ECHOES_200x40b.png)](https://echoes.o0o0.jp/ "ECHOES.") [![](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")[![](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
 
 ### Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
@@ -87,15 +76,10 @@ SNSなど
 
 ..........................................
 
-Flashエミュレーター(Chrome拡張あり)
-[Ruffle](https://ruffle.rs/)
-読めます。ぜひ。
+Flashエミュレーター(Chrome拡張あり) [Ruffle](https://ruffle.rs/)
 
  『Sourire』
-https://www.arakishingo.com/pc/pieces/sourire/vol01/
-https://www.arakishingo.com/pc/pieces/sourire/vol02/
-https://www.arakishingo.com/pc/pieces/sourire/vol03/
-https://www.arakishingo.com/pc/pieces/sourire/vol04/
+https://www.arakishingo.com/pc/pieces/sourire/vol01/ https://www.arakishingo.com/pc/pieces/sourire/vol02/ https://www.arakishingo.com/pc/pieces/sourire/vol03/ https://www.arakishingo.com/pc/pieces/sourire/vol04/
 
 
 > ![Sourire vol01 (Page 6), Shingo Araki](Sourire.jpg)

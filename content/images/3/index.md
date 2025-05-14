@@ -2,7 +2,7 @@
 date: 2025-04-01T20:01:59+0900
 title: From 2021 to 2023
 
-thumb: 3.jpeg
+thumb: thumb.jpg
 main: Drawing
 
 categories:  Drawings by the pain

@@ -1,8 +1,7 @@
-
 :root {
     --bg1: #ECEFF1;
     --bg2: #fff;
-    
+
     --tx1: #212121;
     --tx2: #757575;
     --lk1: #0051dd;
@@ -96,25 +95,36 @@ header {
     nav {
         display: flex;
         letter-spacing: 0.1em;
-        justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         line-height: 1.2;
+
         h1 {
             margin: 0;
+            flex: 1 1 5em;
         }
-
-        a {
-            text-decoration: none;
-            color: var(--tx1);
-            font-size: Max(1.25rem, 1.5vw);
-
-            &:hover {
+            a {
+                text-decoration: none;
                 color: var(--tx1);
-            }
+                font-size: Max(1.25rem, 1.5vw);
 
-            &:active {
-                color: var(--ac2);
+                &:hover {
+                    color: var(--tx1);
+                }
+
+                &:active {
+                    color: var(--ac2);
+                }
             }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex: 2 1 auto;
+            margin: 0;
+            padding: 0;
         }
     }
 }
@@ -184,17 +194,17 @@ h3 {
     font-size: 1.2rem;
 }
 
-p{
-        text-align: justify;
-    
+p {
+    text-align: justify;
+
     &:empty {
         display: none;
     }
 }
+
 a {
     color: var(--lk1);
     text-decoration: none;
-
     &:hover {
         color: var(--lk2);
     }
@@ -208,19 +218,21 @@ a {
     }
 }
 
-abbr{
+abbr {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     cursor: help;
-   
-    &:hover,&:active{
-        &::after{
+
+    &:hover,
+    &:active {
+        &::after {
             content: "：" attr(text);
             text-decoration: none;
             font-size: .9rem;
         }
     }
 }
+
 mark {
     background: var(--ac3);
 }
@@ -255,10 +267,12 @@ table {
 
 
 
-ul, ol{
+ul,
+ol {
     padding-left: 2rem;
 
 }
+
 ul {
     list-style: disc;
 }
@@ -476,27 +490,30 @@ details {
 .footnotes {
     display: flex;
     justify-content: flex-end;
-    hr{
+
+    hr {
         display: none;
     }
+
     p {
         margin: 0;
-        display:inline;
+        display: inline;
     }
 
     ol {
         margin: 0;
         padding-left: 0;
-        width: Min(70vw,25rem);
-        li{
+        width: Min(70vw, 25rem);
+
+        li {
             display: flex;
 
             &::before {
-            counter-increment: section;
-            content: "※" counter(section) "： ";
-            flex: 0 0 auto;
+                counter-increment: section;
+                content: "※" counter(section) "： ";
+                flex: 0 0 auto;
+            }
         }
-    }
     }
 
 }
@@ -512,7 +529,8 @@ details {
 }
 
 
-blockquote,.footnote-ref{
+blockquote,
+.footnote-ref {
     figure {
         width: fit-content;
         margin: 0;

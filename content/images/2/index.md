@@ -1,7 +1,7 @@
 ---
 date: 2025-03-28T20:50:40+0900
 title: 3月のユメ
-thumb: 2.jpg
+thumb: thumb.jpg
 description: 白昼夢の中で
 categories: Illustrations about dreams
 # draft: true 

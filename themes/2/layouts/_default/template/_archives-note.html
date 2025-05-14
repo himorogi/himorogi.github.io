@@ -3,9 +3,9 @@
 {{ end }}
 {{ define "main" }}
 <main class="{{ .Section }}-main">
-
+<div style="background: url(giphy-1.gif);height: 5em;"></div>
     <h1>{{ .Title }}</h1>
-    わたしノートとコンティニュー（スクラップ、ドローイング、かな〜り辛い時のメモなど）
+    わたしノート（スクラップ、ドローイング、かな〜り辛い時のメモなど）
     <br><br>
     <div style="
         column-count: 4;
@@ -13,10 +13,13 @@
         column-gap: 0;
     ">
 
-        {{ range .Resources.ByType "image" | collections.Shuffle }}
+        {{ range .Resources.Match "*.jpg" | collections.Shuffle }}
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
         {{ end }}
     </div>
+    <br><br>
+    <div style="background: url(giphy-1.gif);height: 5em;"></div>
+
 </main>
 <style>
     body {
