@@ -5,7 +5,7 @@
     --tx1: #212121;
     --tx2: #757575;
     --lk1: #0051dd;
-    --lk2: var(--tx1);
+    --lk2: var(--lk1);
     --ac1: #F4511E;
     --ac2: #d5002e;
     --ac3: #FFE57Fe0;
@@ -102,9 +102,11 @@ header {
             margin: 0;
             flex: 1 1 5em;
         }
+        a, a:visited{
+            color: var(--tx1);
+        }
             a {
                 text-decoration: none;
-                color: var(--tx1);
                 font-size: Max(1.25rem, 1.5vw);
 
                 &:hover {
@@ -205,13 +207,11 @@ p {
 a {
     color: var(--lk1);
     text-decoration: none;
-    &:hover {
-        color: var(--lk2);
-    }
 
     &:active {
         color: var(--ac2);
     }
+
 
     sup {
         color: var(--tx1);

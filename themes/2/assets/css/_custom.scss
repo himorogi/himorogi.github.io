@@ -198,7 +198,7 @@
             width: Min(10rem, 30vw);
 
             img {
-                object-fit: contain;
+                object-fit: cover;
                 aspect-ratio: 1 / 1;
                 object-position: center top;
             }
