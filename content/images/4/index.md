@@ -7,6 +7,8 @@ main: animation
 
 categories:  Animation
 description: 鳥のアニメーションと音
+
+draft: true
 ---
 
 youtube
