@@ -166,10 +166,10 @@ if (age >= 0) {
   }
   if(age >= 10) {
     moonage = moonage.substring(0,4) ;
-    var image   = imagedir + moonage.substring(0,2) / 2 + suffix;
+    var image   = imagedir + moonage.substring(0,2) + suffix;
   } else {
     moonage = moonage.substring(0,3);
-    image   = imagedir + moonage.substring(0,1) / 2 + suffix;
+    image   = imagedir + moonage.substring(0,1) + suffix;
   }
 
   const sec = document.createElement('div')
@@ -181,9 +181,9 @@ if (age >= 0) {
   // sec.innerHTML += `${maeZero(hour)}:${maeZero(minute)}<br>`;
 
   // document.write(' <img width="', imageWidth, '" height="', imageHeight, '" src="', image, '" alt="" \/>');
-  sec.innerHTML += '<img width="' + imageWidth + '" height="' + imageHeight + '" src="' + image + '"><br>';
+  sec.innerHTML += '<img width="' + imageWidth + '" height="' + imageHeight + '" src="' + image + '">';
 
-  sec.innerHTML += `月齢 ${moonage}`;
+  sec.innerHTML += `<span>月齢 ${moonage}</span>`;
 
   document.querySelector('#moon').appendChild(sec)
 }
