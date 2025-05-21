@@ -70,9 +70,10 @@ SNSなど
 
 
 [![](ribose.png)](https://ribo.zone "RIBOSE")[![](c4a0c668acf9c140.png)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](burlywoodstripe_banner.jpg)](https://burlywoodstripe.sakura.ne.jp "水滴の力")
+{style="text-align: start;"}
 
 [![](ECHOES_200x40b.png)](https://echoes.o0o0.jp/ "ECHOES.") [![](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")[![](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
-
+{style="text-align: start;"}
 
 ### Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
