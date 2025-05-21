@@ -62,11 +62,8 @@
 
   <footer>
     {{if .IsHome}}
-        {{ if not hugo.IsServer }}
-        <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" src="https://script.google.com/macros/s/AKfycbymJo12l24X0tMCaXkuCgSa4pkf9h-EQVoMmFCBmgnlpN8j4V-cTO87uGOSx2fEt8BMAg/exec?url=https://himorogi.github.io"></iframe>
-        {{ else }}
-        <span style="font-family: Consolas, 'Courier New', Courier, Monaco, monospace;line-height: 1;font-size: .8rem;">Counter 1234567890</span>
-        {{ end }}
+        <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" src="https://script.google.com/macros/s/AKfycby1rx0E1xfF0xR1IJ_7BdN957DjL7ta1s8plyfgxTY5iNaA492AMMka--hcKOOp7CIdcw/exec{{ if not hugo.IsServer }}?url=https://himorogi.github.io{{ end }}"></iframe>
+        
     {{ end }}
     <br>
    ©{{ dateFormat "2006" now }} HMLOG

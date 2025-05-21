@@ -92,12 +92,13 @@ body {
 
 header,footer{
     letter-spacing: 0.1em;
+            line-height: 1.2;
+
 }
 header {
     margin-bottom: 3rem;
     nav {
         display: flex;
-        line-height: 1.2;
         align-items: baseline;
         h1 {
             margin: 0;
