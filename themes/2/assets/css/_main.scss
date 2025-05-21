@@ -39,7 +39,8 @@ blockquote,
 details,
 table,
 article,
-form {
+form,
+video {
     margin: 1rem 0;
 }
 
@@ -89,25 +90,25 @@ body {
 
 }
 
+header,footer{
+    letter-spacing: 0.1em;
+}
 header {
     margin-bottom: 3rem;
-
     nav {
         display: flex;
-        letter-spacing: 0.1em;
-        // align-items: center;
         line-height: 1.2;
-
+        align-items: baseline;
         h1 {
             margin: 0;
-            flex: 1 1 5em;
+            flex: 1 0 Min(8rem, 40vw);
         }
         a, a:visited{
             color: var(--tx1);
         }
             a {
                 text-decoration: none;
-                font-size: Max(1.25rem, 1.5vw);
+                font-size: Max(1.15rem, 1.25vw);
 
                 &:hover {
                     color: var(--tx1);
@@ -120,9 +121,9 @@ header {
         ul {
             list-style: none;
             display: flex;
-            justify-content: end;
             align-items: center;
             justify-content: space-between;
+            gap: .3rem .8rem;
             flex-wrap: wrap;
             flex: 2 1 auto;
             margin: 0;
@@ -132,7 +133,8 @@ header {
 }
 
 footer {
-    margin: 3rem 0;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 section,
@@ -150,7 +152,7 @@ article {
     max-width: 55rem;
     margin: 0 auto;
 
-    figure {
+    figure{
         width: calc(100% + 2rem);
         margin-left: -1rem;
     }
@@ -198,7 +200,9 @@ h3 {
 
 p {
     text-align: justify;
-
+    img{
+        text-align: start;
+    }
     &:empty {
         display: none;
     }
@@ -262,6 +266,11 @@ table {
     th,
     td {
         padding: .5rem;
+        border: none;
+        figure{
+            max-width: 100%;
+            margin: 0;
+        }
     }
 }
 
@@ -306,7 +315,7 @@ th,
 td {
     text-align: start;
     word-break: auto-phrase;
-    vertical-align: unset;
+    // vertical-align: unset;
 }
 
 
@@ -353,6 +362,7 @@ textarea {
     padding: .2rem;
     margin: 0 .5rem .5rem 0;
     border-radius: 0;
+    border: var(--border);
 
     &:focus-within {
         background: var(--bg2);
@@ -361,15 +371,12 @@ textarea {
 
 input[type=button] {
     font-size: 1rem;
-    color: var(--bg1);
-    background: var(--lk1);
-    padding: 0 .5rem;
+    color: var(--bg2);
+    background: var(--tx1);
+    border-radius: 0;
+    padding: .2rem 1rem;
     margin: 0 .5rem .5rem 0;
     cursor: pointer;
-
-    &:hover {
-        background: var(--lk2);
-    }
 }
 
 button,
@@ -518,6 +525,9 @@ details {
 
 }
 
+video{
+    max-width: 100%;
+}
 .footnote-ref {
     &::before {
         content: "※";

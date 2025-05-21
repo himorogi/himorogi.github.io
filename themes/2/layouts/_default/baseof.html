@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
 
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
 
@@ -12,7 +13,7 @@
 
 
   {{ if not hugo.IsServer }}
-  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png_2">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon_2.png">
   <link rel="manifest" href="/favicon/manifest.webmanifest">
   {{ end }}
 
@@ -44,6 +45,7 @@
           </a>
         </li>
         {{- end }}
+
       </ul>
 
     </nav>
@@ -58,9 +60,17 @@
   {{ end }}
   {{ partial "syukujitsu-sekki.html" . }}
 
-  {{/* <footer>
-    ©{{ dateFormat "2006" now }} HMLOG
-  </footer> */}}
+  <footer>
+    {{if .IsHome}}
+        {{ if not hugo.IsServer }}
+        <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" src="https://script.google.com/macros/s/AKfycbymJo12l24X0tMCaXkuCgSa4pkf9h-EQVoMmFCBmgnlpN8j4V-cTO87uGOSx2fEt8BMAg/exec?url=https://himorogi.github.io"></iframe>
+        {{ else }}
+        <span style="font-family: Consolas, 'Courier New', Courier, Monaco, monospace;line-height: 1;font-size: .8rem;">Counter 1234567890</span>
+        {{ end }}
+    {{ end }}
+    <br>
+   ©{{ dateFormat "2006" now }} HMLOG
+  </footer> 
 </body>
 
 </html>

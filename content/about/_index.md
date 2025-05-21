@@ -24,7 +24,7 @@ thumb: desk/images/desk2.png
 
 SNSなど
 : [Threads](https://www.threads.com/@89__0531)…とっちらかっている
-  YouTube…準備中
+  [YouTube](https://www.youtube.com/@crowetcats)…始めたて
   [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
 
 
@@ -64,11 +64,15 @@ SNSなど
 ---
 
 ## Bookmarks
-[世界史の窓](https://www.y-history.net/) [国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html) [今日のほしぞら(国立天文台 暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi) [車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/) [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/) [アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com) [シンボルの源泉](https://www.typography.or.jp/symbol/)
+[世界史の窓](https://www.y-history.net/) [国・地域(外務省)](https://www.mofa.go.jp/mofaj/area/index.html) [今日のほしぞら(暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi) [車田正美オフィシャルサイト 生々流転](https://kurumadapro.com/) [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/) [アニメに感謝 星まことの探求ブログ](http://animenikansya.blog.fc2.com) [シンボルの源泉](https://www.typography.or.jp/symbol/) [ColBase: 国立文化財機構所蔵品統合検索システム](https://colbase.nich.go.jp/?locale=ja)
 
-[![](ribose.png)](https://ribo.zone "RIBOSE")[![](c4a0c668acf9c140.png)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](burlywoodstripe_banner.jpg)](https://burlywoodstripe.sakura.ne.jp "水滴の力")[![](azbtn.gif)](https://www.aozora.gr.jp "青空文庫")
+[青空文庫](https://www.aozora.gr.jp) [口語訳聖書](https://pebutty.net/kougo/) [死者の書の呪文](https://en.wikipedia.org/wiki/List_of_Book_of_the_Dead_spells) [ギルガメシュ叙事詩](http://www.aurora.dti.ne.jp/~eggs/gil.htm)
+
+
+[![](ribose.png)](https://ribo.zone "RIBOSE")[![](c4a0c668acf9c140.png)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](burlywoodstripe_banner.jpg)](https://burlywoodstripe.sakura.ne.jp "水滴の力")
 
 [![](ECHOES_200x40b.png)](https://echoes.o0o0.jp/ "ECHOES.") [![](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")[![](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
+
 
 ### Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
