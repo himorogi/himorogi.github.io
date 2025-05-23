@@ -1,5 +1,6 @@
 ---
 date: 2025-01-24T11:43:50+09:00
+expiryDate: 2025-01-24T11:43:50+09:00
 title: 数列、比
 thumb: 1-1.png
 main: Illustration

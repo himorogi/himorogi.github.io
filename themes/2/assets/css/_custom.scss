@@ -175,12 +175,16 @@
 
 
 .images-main {
-
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    // gap: 0 1rem;
     .images-item {
         line-height: 1.2em;
         display: flex;
         text-decoration: none;
+        border-top: var(--border);
         border-bottom: var(--border);
+        margin-bottom: -0.025rem;
         padding: 1rem 0;
         color: var(--tx1);
         gap: 1rem;

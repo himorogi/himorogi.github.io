@@ -4,7 +4,7 @@ date: 2025-05-21T10:22:42+0900
 title: A little bird has flown.
 
 thumb: thumb.jpg
-main: animation
+imgTags: animation
 
 categories:  Animation
 description: 鳥のアニメーション
@@ -45,7 +45,7 @@ May 2025
 ## エスキース
 ![](esquisse.png)
 
----
+
 
 Title
 : {{< param "title" >}}　

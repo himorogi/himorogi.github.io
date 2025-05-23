@@ -46,13 +46,11 @@
         <span disabled>←</span>
     {{ end }}
 
-    {{ $counter := add (len .Parent.Pages) 1 }}
     {{ $currentPath := .Page.RelPermalink}}
       {{ range .Parent.Pages}}
-        {{ $counter = sub $counter 1 }}
           {{if eq $currentPath .RelPermalink}}
           <span class="num">
-          {{$counter | printf "%#o" }}
+           {{ mod (float .File.ContentBaseName) 10  | printf "%#o" }}
         </span>  
         {{ end }}
       {{ end }}

@@ -1,11 +1,8 @@
-{{ $counter := add (len .Pages) 1 }}
 
 {{/*  <div class="sort">
   <span>≡↓</span>
 </div>  */}}
     {{ range .Pages }}
-    {{ $counter = sub $counter 1 }}
-
 
         <a href="{{.RelPermalink }}" class="images-item">
             <div class="image-wrap">
@@ -27,11 +24,10 @@
             </div>
  
            <div class="count">
-            <div class="count-page">{{ $counter | printf "%#o"}}</div>
-
+            <div class="count-page">{{ mod (float .File.ContentBaseName) 10  | printf "%#o" }}</div>
+  
 
             <div class="count-image">
-              <div>
                 {{ $headings := slice }}
     
                 {{range .Pages }}
@@ -43,14 +39,18 @@
               {{ range $headings }}
               {{/*  {{trim . "\n# "}}  */}}
               {{ end }}
-               </div>
-              {{with .Params.count_images }}
+              {{/*  {{with .Params.count_images }}
               {{ range seq . }}＊{{ end }}
               {{ else }} 
              
               {{with findRE `(?s)!\[.*?\]\(.*?\)`  .RawContent  }} 
               {{ range . }}＊{{ end }}
               {{ end }}
+              {{ end }}  */}}
+  
+              {{ $pages := where site.Pages "Section" "eq" "images" }}
+              {{ with $t := .Page.Params.imgTags }}
+                    {{  index site.Params.images $t | safeHTML}}
               {{ end }}
 
             </div>
@@ -58,6 +58,8 @@
 
         </a>
 
+        
 
-
+ 
+   
     {{ end }}

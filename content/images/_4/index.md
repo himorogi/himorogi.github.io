@@ -1,5 +1,7 @@
 ---
 date: 2025-02-10T14:07:09+0900
+expiryDate: 2025-01-24T11:43:50+09:00
+
 title: Night on the Galactic Railroad
 draft: true
 

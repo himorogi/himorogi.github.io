@@ -49,4 +49,4 @@ gridとflexアイテム個別指定
 - [Patternify | CSS Pattern Generator](http://www.patternify.com/) ピクセルパターンの作成
 - [CSS Background Patterns by MagicPattern](https://www.magicpattern.design/tools/css-backgrounds) CSSパターン 
 - [The best Favicon Generator](https://favicon.io) ファビコンの作成
-
+- [ICONSVG - Quick customizable SVG icons for your project](https://iconsvg.xyz/) SVGアイコン
