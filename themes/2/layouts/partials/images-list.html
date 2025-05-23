@@ -16,7 +16,7 @@
 
           <div class="images-info">
             <div>
-              <div class="title">{{ .Title }}</div>
+              <div class="title">{{ .Title }}{{ if .Draft }}《下書き》{{ end }}</div>
               <div class="category">{{ .Params.categories }}</div>
             </div>
             
@@ -50,7 +50,7 @@
   
               {{ $pages := where site.Pages "Section" "eq" "images" }}
               {{ with $t := .Page.Params.imgTags }}
-                    {{  index site.Params.images $t | safeHTML}}
+                    {{/*  {{  index site.Params.images $t | safeHTML}}  */}}
               {{ end }}
 
             </div>
