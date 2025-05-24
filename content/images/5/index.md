@@ -1,17 +1,17 @@
 ---
 date: 2025-05-22T19:59:39+0900
-title: Zodiac & Planets
+title: Zodiac & Planets in astrology
 draft: true 
 
-thumb: 1.png
+thumb: zodiac/1.png
 main: Illustration
 
-category:  Illustrations
-description: 十二星座のイラストカット
+categories:  
+description: 十二星座と惑星のイラストカット
 
 ---
 
-## ZODIAC
+## ＊ZODIAC＊
 {.title}
 
 <div id="zodiac">
@@ -20,7 +20,7 @@ description: 十二星座のイラストカット
 </div>
 <br><br>
 
-## PLANETS
+## ＊PLANETS＊
 {.title}
 
 <div id="planet">
@@ -29,10 +29,8 @@ description: 十二星座のイラストカット
 </div>
 
 {{< STYLE >}}
-body{
-     
-        background: url("data:image/svg+xml,%3Csvg viewBox='0 0 268 268' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6.2' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    }   
+
+
 #zodiac,#planet{
     display: flex;
     flex-wrap: wrap;
@@ -42,8 +40,6 @@ body{
     figure{
     margin: 0;
     width: 100%;
-   mix-blend-mode: color-burn;
-   filter: brightness(1.1);
    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
    line-height:0;
 
@@ -62,7 +58,14 @@ body{
 }
 {{< /STYLE >}}
 
-<br>
+<br><br>
+
+## ＊SKETCHES＊
+{.title}
+
+![](zodiac_sketches.png)
+
+![](planets_sketches.png)
 
 Title
 : {{< param "title" >}}　

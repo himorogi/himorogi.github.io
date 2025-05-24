@@ -23,7 +23,7 @@ thumb: desk/images/desk2.png
 
 
 SNSなど
-: [Threads](https://www.threads.com/@89__0531)…とっちらかっている
+: [Threads](https://www.threads.com/@89__0531)…思いつきメモと化している
   [YouTube](https://www.youtube.com/@crowetcats)…始めたて
   [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
 

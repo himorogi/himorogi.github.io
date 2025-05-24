@@ -9,13 +9,7 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
 
   {{/* Favicon */}}
-  <link rel="icon" href="/favicon/favicon_2.ico">
-
-
-  {{ if not hugo.IsServer }}
-  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon_2.png">
-  <link rel="manifest" href="/favicon/manifest.webmanifest">
-  {{ end }}
+  <link rel="icon" href="favicon.ico">
 
   {{/* CSS */}}
   {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}

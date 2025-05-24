@@ -5,7 +5,7 @@ thumb: thumb.jpg
 imgtags: illustration
 
 description: 白昼夢の中で
-categories: Illustrations about dreams
+categories: 
 # draft: true 
 ---
 

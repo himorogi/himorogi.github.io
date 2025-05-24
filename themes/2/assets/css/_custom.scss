@@ -182,9 +182,9 @@
         line-height: 1.2em;
         display: flex;
         text-decoration: none;
-        border-top: var(--border);
+        // border-top: var(--border);
         border-bottom: var(--border);
-        margin-bottom: -0.025rem;
+        // margin-bottom: -0.025rem;
         padding: 1rem 0;
         color: var(--tx1);
         gap: 1rem;
@@ -313,7 +313,7 @@
 
 ::-webkit-scrollbar-track {
     background-color: var(--bg1);
-    background-image: radial-gradient(#000000 .05rem, var(--bg1) .05rem);
+    background-image: radial-gradient(var(--tx1) .05rem,var(--bg1) .05rem);
     background-size: 1rem 1rem;
 }
 
