@@ -3,7 +3,6 @@
   <span>≡↓</span>
 </div>  */}}
     {{ range .Pages }}
-
         <a href="{{.RelPermalink }}" class="images-item">
             <div class="image-wrap">
               {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
@@ -24,7 +23,13 @@
             </div>
  
            <div class="count">
-            <div class="count-page">{{ mod (float .File.ContentBaseName) 10  | printf "%#o" }}</div>
+            <div class="count-page">
+              {{ if eq ( sub (.File.ContentBaseName | strings.Count "") 1 ) 1}}
+                  {{ int .File.ContentBaseName | printf "%#o" }}
+              {{ else }}
+                  {{ int .File.ContentBaseName  }}
+              {{ end }}
+            </div>
   
 
             <div class="count-image">

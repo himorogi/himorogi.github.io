@@ -15,17 +15,11 @@ thumb: desk/images/desk2.png
 
 - サイト名： HMLOG (Himorogu)
 - URL： {{< param "site.baseurl" >}}
-- 管理人： 烏山 (Karasuyama)[プロフィール](prof) / [Neocities](https://mild.neocities.org)
+- 管理人： 烏山 (Karasuyama)
 - 連絡先： tsuwim@gmail.com / [Googleフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdavy3JvDzFVRdmfFeDm0OMLWg5xf9_BZQgGFX5AHFX7hGWRg/viewform?usp=sf_link)
 - リンクフリー
   <img src="/hmlog_banner.png"> <img src="/hmlog_banner2.png">
 - 内容のシェア・引用の場合は出典元を明記すること
-
-
-SNSなど
-: [Threads](https://www.threads.com/@89__0531)…思いつきメモと化している
-  [YouTube](https://www.youtube.com/@crowetcats)…始めたて
-  [Google Drive](https://drive.google.com/drive/folders/1wx-GFKUohZp43SdItubYQijUvKrdc-nm?usp=share_link)…素材配布（共有フォルダ）
 
 
 {{< HTML >}}

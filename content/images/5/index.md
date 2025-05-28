@@ -1,6 +1,6 @@
 ---
 date: 2025-05-22T19:59:39+0900
-title: Zodiac & Planets in astrology
+title: Zodiac 
 draft: true 
 
 thumb: zodiac/1.png
