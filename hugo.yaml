@@ -51,6 +51,8 @@ markup:
     ordered: true
     startLevel: 2
   goldmark:
+      extensions:
+        linkify: false
       parser:
         attribute:
           block: true

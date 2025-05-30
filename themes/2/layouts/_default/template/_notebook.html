@@ -1,0 +1,25 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+<main class="{{ .Section }}-main">
+ {{ partial "render-content.html" . }}
+<ol class="notebook-wrap">
+  {{ range .Pages.Reverse }}
+ <li>
+    <a href="{{ .RelPermalink }}" class="note">
+    <span>
+      {{ .Title }}
+    </span>
+  </a>
+   {{ .Params.description }}
+ </li>
+  {{ end }}
+</ol>
+</main>
+<style>
+
+</style>
+
+{{ end }}

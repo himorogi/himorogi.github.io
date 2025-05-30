@@ -173,6 +173,13 @@
     }
 }
 
+body:has(.notebook-main){
+background: url(/notebook/paper.jpg);
+background-position: center;
+background-size: 100%;
+background-repeat: repeat;
+background-attachment: fixed;
+}
 
 .images-main {
     // display: grid;

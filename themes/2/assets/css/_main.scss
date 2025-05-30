@@ -1,16 +1,16 @@
 :root {
-    --bg1: #ECEFF1;
-    --bg2: #fff;
+    --bg1: #FFFCF0;
+    --bg2: #F2F0E5;
 
-    --tx1: #212121;
-    --tx2: #757575;
-    --lk1: #0051dd;
-    --lk2: var(--lk1);
-    --ac1: #F4511E;
-    --ac2: #d5002e;
-    --ac3: #FFE57Fe0;
-    --ac4: #B9F6CAe0;
-    --border: solid 0.02rem #757575;
+    --tx1: #100F0F;
+    --tx2: #6F6E69;
+    --lk1: #4385BE;
+    --lk2: #8B7EC8;
+    --ac1: #DA702C;
+    --ac2: #D14D41;
+    --ac3: #F6E2A0;
+    --ac4: #BFE8D9;
+    --border: solid 0.02rem #6F6E69;
     --font-main: "Zen Old Mincho";
     --font-mono: Consolas, "Courier New", Courier, Monaco, monospace;
     --font-weight: 500;
@@ -212,7 +212,9 @@ p {
 a {
     color: var(--lk1);
     text-decoration: none;
-
+    &:visited{
+        color: var(--lk2);
+    }
     &:active {
         color: var(--ac2);
     }

@@ -13,7 +13,9 @@
             </tr>
         </thead>
         <tbody>
-            {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+            {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+            {{ range first 3 (where $pages "Params.update" "ne" false).ByDate.Reverse }}
             <tr>
                 <td><time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time></td>
                 <td> <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Draft }}《下書き》{{ end }}

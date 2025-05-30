@@ -3,7 +3,7 @@ date: 2025-05-21T10:22:42+0900
 # publishDate: 2025-05-21T12:00:00+0900
 title: A little bird has flown.
 
-thumb: thumb.jpg
+thumb: thumb.gif
 imgTags: animation
 
 categories:  

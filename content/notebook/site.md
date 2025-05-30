@@ -42,11 +42,16 @@ gridとflexアイテム個別指定
 ## Google Apps Script
 - [Google Apps Script でアクセスカウンターを作る](https://zenn.dev/meiryo7743/articles/create-a-web-counter-with-google-apps-script)
 
-## 色・素材
+## 素材
 
-- [Open Color](https://yeun.github.io/open-color/) カラーパレット
-- [🎨 Material Design Colors, Color Palette | Material UI](https://materialui.co) カラーパレット
+
 - [Patternify | CSS Pattern Generator](http://www.patternify.com/) ピクセルパターンの作成
 - [CSS Background Patterns by MagicPattern](https://www.magicpattern.design/tools/css-backgrounds) CSSパターン 
 - [The best Favicon Generator](https://favicon.io) ファビコンの作成
 - [ICONSVG - Quick customizable SVG icons for your project](https://iconsvg.xyz/) SVGアイコン
+
+## 色
+- [Open Color](https://yeun.github.io/open-color/) 
+- [🎨 Material Design Colors, Color Palette | Material UI](https://materialui.co) 
+- [The good colors – Full spectrum – OKLCH](https://thegoodcolors.com/?FO100141000) 
+- [Flexoki — Steph Ango](https://stephango.com/flexoki)
