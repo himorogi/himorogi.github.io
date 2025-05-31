@@ -15,20 +15,20 @@ thumb: desk/images/desk2.png
 
 - サイト名： HMLOG (Himorogu)
 - URL： {{< param "site.baseurl" >}}
-- 管理人： 烏山 (Karasuyama)
+- 管理人： 烏山 (Karasuyama) [プロフィール](prof)
 - 連絡先： tsuwim@gmail.com
 - リンクフリー
   <img src="/hmlog_banner.png"> <img src="/hmlog_banner2.png">
 - 内容のシェア・引用の場合は出典元を明記すること
 
+### Shop
 
-<!-- [<input type="button" value="SUZURI">](#) [<input type="button" value="BOOTH">](#) -->
+<a href="https://suzuri.jp/crowetcats" target="_blank" rel="noreferrer"><button class="btn">SUZURI <sup class="external"></sup></button></a>
+
 
 <br><br>
 
 
 [<img src="desk/images/desk2.png" style="width:200px;border: .05rem solid;">](desk)
-
-<br>
 
 <button>[Bookmarks](bookmarks)</button>

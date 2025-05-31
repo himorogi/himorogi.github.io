@@ -49,6 +49,11 @@ strong {
     color: var(--ac1);
 }
 
+b,
+strong,
+button {
+        -webkit-text-stroke: .03em;
+}
 
 [disabled] {
     visibility: hidden;
@@ -218,8 +223,7 @@ a {
     &:active {
         color: var(--ac2);
     }
-
-
+    
     sup {
         color: var(--tx1);
     }
@@ -372,17 +376,26 @@ textarea {
     }
 }
 
-input[type=button] {
+input[type=button], .btn {
     font-size: 1rem;
     color: var(--bg1);
     border: none;
-    background: var(--ac2);
-    padding: .2rem .6rem;
+    background: var(--tx1);
+    padding: .5rem 1rem;
     margin: 0 .5rem .5rem 0;
     border-radius: .2rem;
     cursor: pointer;
+        letter-spacing: 0.05em;
+
     &:active{
-        color: var(--tx1);
+        color: var(--ac2);
+    }
+    &::before,
+    &::after {
+        content: "";
+    }
+    sup{
+        color: var(--bg1);
     }
 }
 

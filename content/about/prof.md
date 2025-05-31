@@ -14,9 +14,6 @@ update: false
 : Photoshop, Figma, Visual Studio Code, GrageBand, Final Cut Pro
 ---
 
-### 読みたい本
-- 夜間飛行
-- 星の巡礼
 
 ### 欲しいもの
 - Hikari Saint Seiya- Araki Shingo artbook
@@ -24,13 +21,9 @@ update: false
 - (神々の熱き戦いのVHS)
 
 ### 好きな漫画
-- あしたのジョー　高森朝雄（梶原一騎）ちばてつや
+- あしたのジョー　梶原一騎 ちばてつや
 - 蛍三七子　ちばてつや
 - 青い鳥の神話　車田正美
 - 火の鳥　手塚治虫
 - 黄泉のツガイ　荒川弘
 - CLOVER　CLAMP
-
-<br><br><br>
-
-[鵺の鳴き声（YouTube）](https://youtu.be/ECY-h89ihTg?si=TPGLV51JWMOcmkZ_)　
