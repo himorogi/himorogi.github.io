@@ -52,7 +52,7 @@ strong {
 b,
 strong,
 button {
-        -webkit-text-stroke: .03em;
+        -webkit-text-stroke: .01em;
 }
 
 [disabled] {
@@ -412,6 +412,7 @@ a button,
     text-decoration: none;
     line-height: 1;
     white-space: nowrap;
+        letter-spacing: 0.05em;
 
     &::before,
     &::after {

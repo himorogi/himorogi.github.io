@@ -23,7 +23,7 @@ thumb: desk/images/desk2.png
 
 ### Shop
 
-<a href="https://suzuri.jp/crowetcats" target="_blank" rel="noreferrer"><button class="btn">SUZURI <sup class="external"></sup></button></a>
+<a href="https://suzuri.jp/crowetcats" target="_blank" rel="noreferrer"><button class="btn">SUZURI <sup class="external"></sup></button></a> ... Tシャツ作りとデータ配布をしてます
 
 
 <br><br>
