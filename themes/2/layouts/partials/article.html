@@ -12,12 +12,11 @@
     {{ partial "render-content.html" . }}
 
 
-    {{ if eq .Section "posts"}}
     <aside class="page-info">
       <div>
-        <time>{{ .Date | time.Format .Site.Params.date_format }}</time>
+         <span><time>{{ .Date | time.Format .Site.Params.date_format }}</time></span>
         {{if .Params.lastmod }}
-            <span> / 最終更新 <time>{{ .Lastmod | time.Format .Site.Params.date_format }}</time></span>
+            <span> / <time>{{ .Lastmod | time.Format .Site.Params.date_format}}</time></span>
         {{ end }}
       </div>
         {{ with .GetTerms "tags" }}
@@ -27,11 +26,13 @@
               {{ end }}
           </div>
           {{ end }}
+          {{ if eq .Section "posts"}}
           <div>
-              {{ .Content | strings.CountRunes }}文字
+                {{ .Content | strings.CountRunes }}文字
           </div>
+          {{ end }}
       </aside>
-    {{ end }}
+
 
   </article>
 

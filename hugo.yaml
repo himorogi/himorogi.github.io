@@ -7,7 +7,7 @@ hasCJKLanguage: true
 theme: 2
 
 params:
-  date_format: "2006年1月2日 15:04 PM"
+  date_format: "2006年1月2日"
   date_format_2: "2006-01-02"
   date_format_data: "2006/01/02 15:04"
   site:

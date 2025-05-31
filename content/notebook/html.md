@@ -105,7 +105,7 @@ tags:
 <input placeholder="input text" type="text"><br>
 <textarea placeholder="textarea" rows="5" cols="33"></textarea><br>
 <button>ボタン</button>
-<input type="button" value="input ボタン">
+<input type="button" value="INPUTボタン">
 </form>
 {{< /HTML >}}
 

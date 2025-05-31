@@ -53,11 +53,14 @@ strong {
 [disabled] {
     visibility: hidden;
 }
-
+.monospace {
+    font-family: var(--font-mono);
+}
 code,
 pre,
 kbd,
-samp {
+samp,
+ {
     font-size: .95rem;
     font-family: var(--font-mono);
     font-weight: 400;
@@ -111,9 +114,6 @@ header {
                 text-decoration: none;
                 font-size: Max(1.15rem, 1.25vw);
 
-                &:hover {
-                    color: var(--tx1);
-                }
 
                 &:active {
                     color: var(--ac2);
@@ -374,12 +374,16 @@ textarea {
 
 input[type=button] {
     font-size: 1rem;
-    color: var(--bg2);
-    background: var(--tx1);
-    border-radius: 0;
-    padding: .2rem 1rem;
+    color: var(--bg1);
+    border: none;
+    background: var(--ac2);
+    padding: .2rem .6rem;
     margin: 0 .5rem .5rem 0;
+    border-radius: .2rem;
     cursor: pointer;
+    &:active{
+        color: var(--tx1);
+    }
 }
 
 button,
@@ -410,10 +414,6 @@ a button,
     &::after {
         content: "}";
         margin-left: .5rem;
-    }
-
-    &:hover {
-        color: var(--lk2);
     }
 
     &:active {
