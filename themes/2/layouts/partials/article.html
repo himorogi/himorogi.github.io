@@ -13,12 +13,14 @@
 
 
     <aside class="page-info">
+        {{if ne .Params.update false }}
       <div>
          <span><time>{{ .Date | time.Format .Site.Params.date_format }}</time></span>
         {{if .Params.lastmod }}
             <span> / <time>{{ .Lastmod | time.Format .Site.Params.date_format}}</time></span>
         {{ end }}
       </div>
+      {{ end }}
         {{ with .GetTerms "tags" }}
           <div>
               {{ range . }}

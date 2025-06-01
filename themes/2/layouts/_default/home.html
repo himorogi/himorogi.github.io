@@ -1,7 +1,16 @@
 {{ define "main" }}
 <main>
-    {{ .Content }}
-    {{/*  <img src="/images/topimg_5.jpg" alt="Topimg" width="1500" height="1062" style="max-height: 65vh;object-fit: cover;object-position: center;">  */}}
+
+
+    {{/*  {{ .Content }}  */}}
+    {{/*  <img src="/images/topimg_6.png" alt="Topimg" style="
+        height: 50vh;
+        width:100%;
+        object-fit: contain;
+        object-position: center center;
+        mix-blend-mode: multiply;
+        ">  */}}
+
 
     <h2>Latest Update</h2>
     <table>
@@ -28,9 +37,9 @@
     </table>
     <a href="/update/"><button>更新一覧</button></a>
 
-   <p style="text-align: center;">
-    <br><br>
-    <a style="
+    <p style="text-align: center;">
+        <br><br>
+        <a style="
     background: no-repeat center / 100% 100% url(images/book.svg);
     text-align: center;
     padding: 2rem;
@@ -39,15 +48,14 @@
     color: var(--tx1);
     margin:auto;
     " href="/notebook"> &nbsp;NOTEBOOK</a>
-   </p>
-<br><br>
+    </p>
+    <br><br>
 
 
     <style>
-        body{
+        body {}
 
-}
-            th:first-of-type,
+        th:first-of-type,
         td:first-of-type {
 
             width: 13ch;

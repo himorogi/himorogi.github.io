@@ -7,10 +7,11 @@ tags:
 #draft: true
 ---
 
-
-
-<!--more-->
-
+{{< STYLE >}}
+body::after{
+  display: none;
+}
+{{< /STYLE >}}
 
 
 # 見出し H1
