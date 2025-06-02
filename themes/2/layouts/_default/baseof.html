@@ -32,10 +32,11 @@
     <nav>
 
       <ul>
-        <li>      
+        <li>
           <h1>
-            {{/*  <a href="/">{{ .Site.Title }}</a>  */}}
-                      <a href="/"><img src="/logo.png" style="max-height: 2.7rem;margin:0 1rem -0.5rem .2rem;" alt="{{ .Site.Title }}"></a>
+            {{/* <a href="/">{{ .Site.Title }}</a> */}}
+            <a href="/"><img src="/logo.png" style="max-height: 2.7rem;margin:0 1rem -0.5rem .2rem;"
+                alt="{{ .Site.Title }}"></a>
           </h1>
 
 
@@ -43,10 +44,10 @@
 
 
         {{- range site.Menus.main }}
-        
-          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
-            {{ .Name }}
-          </a>
+
+        <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+          {{ .Name }}
+        </a>
         </li>
         {{- end }}
 
@@ -66,20 +67,20 @@
 
   <footer>
     {{if .IsHome}}
-        <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" data-url="https://script.google.com/macros/s/AKfycby1rx0E1xfF0xR1IJ_7BdN957DjL7ta1s8plyfgxTY5iNaA492AMMka--hcKOOp7CIdcw/exec{{ if not hugo.IsServer }}?url=https://himorogi.github.io{{ end }}"></iframe>
-        
+    <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no"
+      data-url="https://script.google.com/macros/s/AKfycbwyJafZrFDcgkl0gSr_5oyHuppItnyxq8G99_7FxiMIGZ442xJh8np7s7C7mLHRDSEk/exec{{ if not hugo.IsServer }}?url=https://himorogi.github.io{{ end }}"></iframe>
+
     {{ end }}
     <br>
-   ©{{ dateFormat "2006" now }} HMLOG
-  </footer> 
+    ©{{ dateFormat "2006" now }} HMLOG
+  </footer>
 
-    {{if .IsHome}}
+  {{if .IsHome}}
   <script>
-    iframe = document.getElementById('access-counter');
-  iframe.setAttribute('src', iframe.getAttribute('data-url'));
-  
-</script>
-    {{ end }}
+      iframe = document.getElementById('access-counter');
+      iframe.setAttribute('src', iframe.getAttribute('data-url'));
+  </script>
+  {{ end }}
 
 </body>
 
