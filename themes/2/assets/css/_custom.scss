@@ -80,6 +80,7 @@
         #moon,
         #sun {
             flex: 1 1 16ch;
+            width: 16ch;
             margin-bottom: 1rem;
             img {
                 height: 1rem;
@@ -93,6 +94,7 @@
 
     #calendar {
         flex: 0 0 10rem;
+        width: 10rem;
         height: 14em;
         .calendar-title {
             display: flex;
