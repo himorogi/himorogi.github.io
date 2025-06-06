@@ -1,0 +1,3 @@
+{{ $fn := print "<li id='fn:" .Page.File.BaseFileName "-" (.Get 0) "'><p>" (.Get 1) " <a href='#fnref:" .Page.File.BaseFileName "-" (.Get 0)  "' class='footnote-backref' role='doc-backlink'>↩︎</a></p></li>"}}
+ {{ .Page.Scratch.Add "footnote" (slice $fn) }}
+ 
