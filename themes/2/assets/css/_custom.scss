@@ -175,20 +175,6 @@
     }
 }
 
-body:has(.notebook-main)::after {
-    content: "";
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: url(/notebook/paper.png);
-    background-position: center;
-    background-size: Min(30rem, 100vw);
-    background-repeat: repeat;
-}
-
 .images-main {
 
     // display: grid;

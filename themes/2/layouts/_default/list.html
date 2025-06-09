@@ -19,6 +19,8 @@
 
   {{ else if eq .Section "posts" }}
     {{partial "posts-list.html" .}}
+  {{ else if eq .Section "about" }}
+  {{ partial "render-content.html" . }}
 
   {{ else }}
 

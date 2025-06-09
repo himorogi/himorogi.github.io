@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<div style="display: grid;
+grid-template-columns: repeat(auto-fill, minmax(15rem,30vw));
+gap: 1rem;
+  align-content: center;
+  justify-content: center;
+">
+{{ range where .Site.RegularPages "Section" "eq" "images"}}
+
+{{ range .Resources.ByType "image" }}
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="">
+{{ end }}
+{{ end }}
+
+</div>
+
+{{ end }}

@@ -2,7 +2,7 @@
 {{/*  <div class="sort">
   <span>≡↓</span>
 </div>  */}}
-    {{ range .Pages }}
+    {{ range where .Pages "Section" "images" }}
         <a href="{{.RelPermalink }}" class="images-item">
             <div class="image-wrap">
               {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
@@ -16,7 +16,7 @@
           <div class="images-info">
             <div>
               <div class="title">{{ .Title }}{{ if .Draft }}《下書き》{{ end }}</div>
-              <div class="category">{{ .Params.categories }}</div>
+              <div class="category">{{ .Params.subTitle }}</div>
             </div>
             
             <div class="description">{{ .Params.description }}</div>
@@ -27,7 +27,7 @@
               {{ if eq ( sub (.File.ContentBaseName | strings.Count "") 1 ) 1}}
                   {{ int .File.ContentBaseName | printf "%#o" }}
               {{ else }}
-                  {{ int .File.ContentBaseName  }}
+                  {{/*  {{ int .File.ContentBaseName  }}  */}}
               {{ end }}
             </div>
   

@@ -5,7 +5,7 @@ thumb: thumb.jpg
 imgtags: illustration
 
 description: 白昼夢の中で
-categories: 
+subTitle: 
 # draft: true 
 ---
 
@@ -25,7 +25,7 @@ categories:
 <br>
 
 
-<div class="card">
+<div class="card" style="display: none;">
 
 # 「虹の彼方に」または「家族の肖像」
 
@@ -101,6 +101,3 @@ Year
 
 Software
 : Photoshop
-
-Reference
-: 鵺

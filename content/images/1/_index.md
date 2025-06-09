@@ -5,7 +5,7 @@ thumb: tree_logo.png
 imgtags: illustration
 
 
-categories: Illustrations for an allegory
+subTitle: Illustrations for an allegory
 description: 木のイラストレーションと象徴としての木について
 count_images: 5
 

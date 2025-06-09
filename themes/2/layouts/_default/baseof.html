@@ -66,8 +66,8 @@
   {{ partial "syukujitsu-sekki.html" . }}
 
   <footer>
-    {{if .IsHome}}
-    <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no"
+    {{if .IsHome }}
+    <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" style="opacity: 0.25;"
       data-url="https://script.google.com/macros/s/AKfycbzFOn5qCyMwbAi4z6QfO8AWQG-GOG1vpKZsCltA3MtIfnIMF0RKY7tBcIZrO3Y1FwblPQ/exec{{ if not hugo.IsServer }}?url=https://himorogi.github.io{{ end }}"></iframe>
 
     {{ end }}

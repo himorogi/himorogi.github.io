@@ -23,9 +23,9 @@ update: false
 [![](yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](ECHOES)](https://echoes.o0o0.jp/ "ECHOES.")[![](sousaku_banner8831.gif)](https://tters.jp/s "創作サーチ")[![](yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")[![](ringo-2.gif)](https://sites.google.com/view/ringo-kids/ "リンゴーの同盟")
 {style="text-align: start;"}
 
-### Special Thanks
+<!-- ### Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API
-[星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript
+[星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript -->
 
 <!-- ---
 [口語訳聖書](https://pebutty.net/kougo/)

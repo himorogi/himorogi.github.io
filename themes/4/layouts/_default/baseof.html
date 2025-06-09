@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
+
+  {{/* Favicon */}}
+  {{/*  <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico?v=4">  */}}
+
+  {{/* CSS */}}
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "css/style.scss" | toCSS $opts | minify | fingerprint }}
+  {{/*  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">  */}}
+  {{ end }}
+<style>
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+</style>
+</head>
+
+<body>
+  <header>
+    <nav>
+            <a href="/"><img src="/logo.png" style="max-height: 2.7rem;margin:0 1rem -0.5rem .2rem;"
+                alt="{{ .Site.Title }}"></a>
+        {{- range site.Menus.main }}
+        <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+          {{ .Name }}
+        </a> / 
+        {{- end }}
+
+    </nav>
+  </header>
+  <br><br>
+  {{ block "main" . }}
+  {{ end }}
+
+</body>
+
+</html>

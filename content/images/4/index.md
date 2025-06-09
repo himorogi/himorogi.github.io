@@ -6,7 +6,7 @@ title: A little bird has flown.
 thumb: thumb.gif
 imgTags: animation
 
-categories:  
+subTitle:  
 description: 鳥のアニメーション
 
 #draft: true
