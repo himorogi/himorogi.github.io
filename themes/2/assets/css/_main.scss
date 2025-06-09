@@ -106,10 +106,14 @@ header {
     margin-bottom: 3rem;
     nav {
         display: flex;
-        align-items:center;
+        align-items: flex-start;
         h1 {
             margin: 0;
-            flex: 1 1 10rem;
+            flex: 1 1 5rem;
+            img{
+                max-height: 2.5rem;
+                margin:-.2rem 1rem 0 .2rem;
+            }
         }
         a, a:visited{
             color: var(--tx1);
@@ -127,7 +131,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: .3rem .8rem;
+            gap: .5rem .8rem;
             flex-wrap: wrap;
             flex: 1 1 auto;
             margin: 0;
