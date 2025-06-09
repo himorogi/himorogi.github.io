@@ -23,4 +23,4 @@ menus: main
 
 <br>
 
-<button>[Bookmarks](bookmarks)</button>
+[Bookmarks](bookmarks)
