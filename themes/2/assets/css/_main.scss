@@ -11,9 +11,10 @@
     --ac3: #F6E2A0;
     --ac4: #BFE8D9;
     --border: solid 0.02rem #6F6E69;
-    --font-main: "Zen Old Mincho";
+    --font-main:  "Zen Old Mincho", serif;
+
     --font-mono: Consolas, "Courier New", Courier, Monaco, monospace;
-    --font-weight: 500;
+    --font-weight:500;
 
 }
 
@@ -88,18 +89,16 @@ body {
     margin: 0 auto;
     padding: 2rem 1rem;
     font-size: 1.02rem;
-    line-height: 1.65;
+    line-height: 1.7;
     background: var(--bg1);
     overflow-x: hidden;
     overflow-y: scroll;
     color: var(--tx1);
     -webkit-font-smoothing: antialiased;
-
-
 }
 
 header,footer{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
             line-height: 1.2;
 
 }
@@ -110,13 +109,14 @@ header {
         align-items:center;
         h1 {
             margin: 0;
+            flex: 1 1 10rem;
         }
         a, a:visited{
             color: var(--tx1);
         }
             a {
                 text-decoration: none;
-                font-size: Max(1.15rem, 1.25vw);
+                font-size: Max(1.1rem, 1.5vw);
 
                 &:active {
                     color: var(--ac2);
@@ -129,7 +129,7 @@ header {
             justify-content: space-between;
             gap: .3rem .8rem;
             flex-wrap: wrap;
-            flex: 2 1 auto;
+            flex: 1 1 auto;
             margin: 0;
             padding: 0;
         }

@@ -1,6 +1,7 @@
 ---
 date: 2025-05-31T16:12:26+0900
 # publishDate: 2025-05-21T12:00:00+0900
+lastmod: 2025-06-09T14:59:31+0900
 title: Imagine in view
 
 thumb: thumb.png
