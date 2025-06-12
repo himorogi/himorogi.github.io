@@ -50,11 +50,11 @@ description: 十二星座と惑星系のイラストレーション
 }
 }
 #zodiac > figure{
-        max-width: max(calc(33.333% - 1rem), 5rem);
+        max-width: calc(33.333% - 1rem);
 }
 
 #planet > figure{
-        max-width: max(calc(25% - 1rem), 10rem);
+        max-width: calc(50% - 1rem);
 }
 {{< /STYLE >}}
 
