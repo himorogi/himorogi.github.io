@@ -1,30 +1,65 @@
 ---
-date: 2025-05-31T16:12:26+0900
-# publishDate: 2025-05-21T12:00:00+0900
-lastmod: 2025-06-09T14:59:31+0900
-title: Imagine in view
+date: 2025-05-22T19:59:39+0900
+# expiryDate: 2025-01-24T11:43:50+09:00
 
-thumb: thumb.png
+title: Zodiac & Planets
+
+thumb: zodiac/3.png
 imgTags: illustrations
 
 subTitle: 
-description: The parade passed across my line of sight.
-
+description: 十二星座と惑星系のイラストレーション
 ---
 
-![](1.jpg)
+## ZODIAC
+{.title}
 
-![](2.jpg)
+<div id="zodiac">
 
-![](3.jpg)
-![](4.jpg)
-![](5.jpg)
-
-
-<br>
-
-<mark> You are me, so that doesn't necessarily mean I like you.</mark>
+![](zodiac/1.png)![](zodiac/2.png)![](zodiac/3.png)![](zodiac/4.png)![](zodiac/5.png)![](zodiac/6.png)![](zodiac/7.png)![](zodiac/8.png)![](zodiac/9.png)![](zodiac/10.png)![](zodiac/11.png)![](zodiac/12.png)
+</div>
 <br><br>
+
+## PLANETS (Astrology)
+{.title}
+
+<div id="planet">
+
+![](planet/1.png)![](planet/2.png)![](planet/3.png)![](planet/4.png)![](planet/5.png)![](planet/6.png)![](planet/7.png)![](planet/8.png)![](planet/9.png)![](planet/10.png)
+</div>
+
+{{< STYLE >}}
+
+
+#zodiac,#planet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    figure{
+    margin: 0;
+    width: 100%;
+   box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+   line-height:0;
+
+
+    img{
+            border-radius: .3rem;
+    }
+}
+}
+#zodiac > figure{
+        max-width: max(calc(33.333% - 1rem), 5rem);
+}
+
+#planet > figure{
+        max-width: max(calc(25% - 1rem), 10rem);
+}
+{{< /STYLE >}}
+
+<br><br>
+
 
 Title
 : {{< param "title" >}}　
@@ -34,4 +69,3 @@ Year
 
 Software
 : Photoshop
-

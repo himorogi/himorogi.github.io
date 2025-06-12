@@ -6,7 +6,7 @@ imgtags: illustration
 
 description: 白昼夢の中で
 subTitle: 
-# draft: true 
+draft: true 
 ---
 
 ![](3.jpg) 
