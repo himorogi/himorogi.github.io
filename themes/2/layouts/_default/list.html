@@ -20,12 +20,16 @@
   {{ else if eq .Section "posts" }}
     {{partial "posts-list.html" .}}
   {{ else if eq .Section "about" }}
-  {{ partial "render-content.html" . }}
+  <article>
+     {{ partial "render-content.html" . }}
+  </article>
+ 
 
   {{ else }}
 
-  {{ partial "render-content.html" . }}
-
+  <article>
+     {{ partial "render-content.html" . }}
+  </article>
   {{ range .Pages }}
   <div>
     <span>

@@ -1,6 +1,6 @@
 :root {
     --bg1: #FFF;
-    --bg2: #F2F0E5;
+    --bg2: #f6f6f6;
 
     --tx1: #100F0F;
     --tx2: #6F6E69;
@@ -111,8 +111,8 @@ header {
             margin: 0;
             flex: 1 1 5rem;
             img{
-                max-height: 2.5rem;
-                margin:-.2rem 1rem 0 .2rem;
+                max-height: Max(2.3rem, 3vw);
+                margin:-.4rem 2.5rem 0 .2rem;
             }
         }
         a, a:visited{
@@ -120,13 +120,14 @@ header {
         }
             a {
                 text-decoration: none;
-                font-size: Max(1.1rem, 1.5vw);
+                font-size: Max(1.1rem, 1.3vw);
 
                 &:active {
                     color: var(--ac2);
                 }
             }
         ul {
+            
             list-style: none;
             display: flex;
             align-items: center;
@@ -149,11 +150,12 @@ footer {
 }
 
 section,
-article {
+article,
+main {
 
-    h1:first-child,
-    h2:first-child,
-    h3:first-child {
+    h1:first-of-type,
+    h2:first-of-type,
+    h3:first-of-type {
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
@@ -265,7 +267,7 @@ pre>code {
 table {
     border-collapse: collapse;
     width: 100%;
-    table-layout: fixed;
+    // table-layout: fixed;
 
     thead {
         font-size: .9rem;
@@ -354,7 +356,7 @@ pre {
 
 
 svg {
-    vertical-align: text-top;
+    vertical-align: bottom;
 }
 
 form {
@@ -385,7 +387,7 @@ input[type=button], .btn {
     font-size: 1rem;
     color: var(--bg1);
     border: none;
-    background: var(--ac2);
+    background: var(--tx1);
     padding: .5rem 1rem;
     margin: 0 .5rem .5rem 0;
     border-radius: .2rem;

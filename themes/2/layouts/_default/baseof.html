@@ -40,7 +40,7 @@
           {{- range site.Menus.main }}
           <li>
             <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
-              {{ .Name }}
+              {{- with .Pre }}{{.}}{{ else }}{{ .Name }}{{ end }}
             </a>
           </li>
           {{- end }}

@@ -2,7 +2,7 @@
 date: 2025-03-28T15:29:29+0900
 lastmod: 2025-03-29T11:09:27+0900
 title: 写真史
-
+description: 写真技術の起こりと発展
 # draft: true
 ---
 
@@ -50,7 +50,7 @@ AC 17
   : シルエットや<abbr text="小さな油彩画">ミニアチュール</abbr>という肖像画の新形態
   : タゲレオタイプ：1839年フランスのタゲールが考案。肖像写真に用いられた
   
-AC 18
+AC 19
 : 1826年 ニエプス『ル・グラの窓からの眺め』
   : カメラ・オブスクラを使用した最古の現存する写真
   : >![Nicéphore Niépce, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg/330px-View_from_the_Window_at_Le_Gras%2C_Joseph_Nic%C3%A9phore_Ni%C3%A9pce.jpg)

@@ -1,6 +1,7 @@
 ---
 date: 2025-05-30T08:15:28+0900
 title: 組版・文字
+description: カリグラフィーからバウハウスまで（未定）
 ---
 
 ![](Typesetting.png)

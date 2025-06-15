@@ -2,6 +2,7 @@
 date: 2025-05-20T14:05:33+0900
 title: 数列・比・分割法
 toc: true
+description: 普遍的な美
 ---
 
 

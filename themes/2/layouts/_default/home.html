@@ -1,6 +1,19 @@
 {{ define "main" }}
+
+
 <main>
-    <img src="/images/topimg.jpg" alt="">
+
+    <figure>
+        <img src="/images/topimg.jpg" width="1200" height="850" loading="lazy">
+    </figure>
+    <p>
+        <small>lastmod:
+            {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+            {{ range first 1 (where $pages "Params.update" "ne" false) }}
+            <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time> - {{ .FirstSection.LinkTitle }}
+            {{ end }}</small>
+    </p>
 </main>
 
 

@@ -2,9 +2,8 @@
 date: 2025-01-27T15:02:53+0900
 lastmod: 2025-02-16T21:08:14+0900
 title: HTML要素—CSS確認用
-tags:
-# - サイト
-#draft: true
+description: HTML要素の見本
+
 ---
 
 {{< STYLE >}}

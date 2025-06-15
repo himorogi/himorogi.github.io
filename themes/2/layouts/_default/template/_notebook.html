@@ -4,22 +4,67 @@
 {{ define "main" }}
 
 <main class="{{ .Section }}-main">
- {{ partial "render-content.html" . }}
-<ol class="notebook-wrap">
-  {{ range .Pages.Reverse }}
- <li>
-    <a href="{{ .RelPermalink }}" class="note">
-    <span>
-      {{ .Title }}
-    </span>
-  </a>
-   {{ .Params.description }}
- </li>
-  {{ end }}
-</ol>
-</main>
-<style>
+  <article>
+    {{ partial "render-content.html" . }}
+    <h1>ペーパー</h1>
 
-</style>
+    <img src="nightFlight.png" alt="nightFlight" style="width: Max(25rem,20vw)" width="1500" height="258"
+      loading="lazy"><br>
+    <table>
+      <thead>
+        <th>nightFlight</th>
+        <th>内容</th>
+      </thead>
+      <tbody>
+        {{ range where .Site.RegularPages "CurrentSection.LinkTitle" "nightFlight"}}
+
+        <tr>
+          <th style="width: 12ch;">
+            <a href="{{ .RelPermalink }}">
+              <span>
+                {{ .Title }}
+              </span>
+            </a>
+          </th>
+          <td>
+            {{ .Params.description }}
+
+          </td>
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>
+
+
+    <h1>メモまたは記録</h1>
+    <table>
+      <thead>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        {{ range (where .Site.RegularPages "CurrentSection.LinkTitle" "notebook").Reverse}}
+
+        <tr>
+          <th>
+            <a href="{{ .RelPermalink }}">
+              <span>
+                {{ .Title }}
+              </span>
+            </a>
+          </th>
+          <td>
+            {{ .Params.description }}
+
+          </td>
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>
+
+  </article>
+</main>
 
 {{ end }}
