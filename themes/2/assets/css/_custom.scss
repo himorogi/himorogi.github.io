@@ -38,7 +38,7 @@
 
 
 .posts-main {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     gap: 0 3rem;
     align-items: flex-start;
@@ -46,6 +46,8 @@
     .posts-wrap {
         flex: 45rem;
         max-width: 100%;
+            max-width: 45rem;
+    margin: auto;
     }
 
 
