@@ -1,42 +1,27 @@
 {{ define "main" }}
 <main class="{{ .Section }}-main">
-<article>
-  <h1 class="marquee">
-    <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
-    <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
-  </h1>
-  {{ partial "render-content.html" . }}
+  <article>
+    <h1 class="marquee">
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+    </h1>
+    {{ partial "render-content.html" . }}
+    {{ with .GetPage "bookmarks" }}
+    {{ partial "render-content.html" . }}
+    {{ end }}
 
-</article>
+  </article>
 </main>
 
 
 <style>
-  .about-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 2rem;
-    image-rendering: pixelated;
-
-    h1 {
-      flex: 100%;
-      line-height: 0;
-      display: flex;
-      align-items: center;
-    }
-
-    p:first-of-type {
-      flex: 1 1 70%;
-    }
-
-  }
-
   .marquee {
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
     font-size: 1.45rem;
-height: 1em;
+    height: 1em;
+
     &::after {
       content: "";
       display: inline-block;
