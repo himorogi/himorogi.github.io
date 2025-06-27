@@ -1,17 +1,17 @@
 ---
 date: 2025-03-28T20:50:40+0900
+lastmod: 2025-06-27T18:47:21+0900
 title: 3月のユメ
 thumb: thumb.jpg
 imgtags: illustration
 
-description: 白昼夢の中で
+description: 白昼夢
 subTitle: 
-draft: true 
 ---
 
 ![](3.jpg) 
 
-*太陽の翳 / 美しいものが引きつける強い力*
+*太陽の翳 / 美しいものが引きつける力*
 参考：[The Great Red Dragon and the Beast from the Sea ](https://artsandculture.google.com/asset/the-great-red-dragon-and-the-beast-from-the-sea-0000/NgGp3PH5_BqlDg)(ウィリアム・ブレイク)
 
 <br>
@@ -25,7 +25,7 @@ draft: true
 <br>
 
 
-<div class="card" style="display: none;">
+<div class="card">
 
 # 「虹の彼方に」または「家族の肖像」
 
@@ -101,3 +101,7 @@ Year
 
 Software
 : Photoshop
+
+---
+
+追記：ごっこ遊びはおしまいだ。それはただの恐怖症ですよ。友達に大した意味はない。無意味（ツーツーツー）
