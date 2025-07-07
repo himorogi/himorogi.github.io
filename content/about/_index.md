@@ -12,7 +12,7 @@ layout: template/_about
 
 - サイト名： HMLOG
 - URL： {{< param "site.baseurl" >}}
-- 管理人： めんどくさい
+- 管理人： 烏山
 - 連絡先： tsuwim@gmail.com
 - リンクフリー
   <img src="/hmlog_banner.png"> <img src="/hmlog_banner2.png">
