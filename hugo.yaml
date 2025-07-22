@@ -4,7 +4,7 @@ title: HMLOG
 hasCJKLanguage: true
 # sectionPagesMenu: main
 
-theme: 2
+theme: 3
 
 params:
   date_format: "2006年1月2日"
