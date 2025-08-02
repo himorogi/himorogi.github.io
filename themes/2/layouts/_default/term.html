@@ -1,0 +1,28 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="breadcrumb">
+  <a href="/">Home</a>
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  {{ $dirFile := split .RelPermalink "/" }}
+  {{ with .Site.GetPage (index $dirFile 1) }}<a href="{{ .RelPermalink }}">{{.Title}}</a>{{ end }}
+  
+  &nbsp;&nbsp;/&nbsp;&nbsp;
+  {{ .Page.Title }}
+</div>
+<main>
+
+    <h1>{{ .Title }}の記事一覧</h1>
+
+
+    {{ range .Pages }}
+    <div>
+      <span>
+        <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time>　<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </span>
+    </div>
+    {{ end }}
+
+  </main>
+  {{ end }}

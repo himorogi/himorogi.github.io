@@ -1,0 +1,21 @@
+{{ if or (eq .Page.Section "posts") (eq .Page.Section "images") }}
+{{ .Page.Scratch.Set "imgPath" ( print "/" .Page.File.Dir .Destination ) }}
+
+{{ .Page.Scratch.Set "imgConfig" ( print "/" .Page.File.Dir .Destination ) }}
+
+
+
+<figure>
+  
+        <img src="{{ .Page.Scratch.Get "imgPath"}}"
+       {{- with .PlainText }} alt="{{ . }}"{{ end -}}
+       {{ with images.Config ( .Page.Scratch.Get "imgConfig" )}}
+       width="{{ .Width }}" height="{{ .Height }}"
+       {{ end }}  
+       loading="lazy"
+       >
+    {{- with .PlainText }}<figcaption>{{ . }}</figcaption>{{ end -}}
+  </figure>
+{{ else }}
+<img src="{{ .Destination }}" {{- with .PlainText }} alt="{{ . }}"{{ end -}} loading="lazy">
+  {{ end }}

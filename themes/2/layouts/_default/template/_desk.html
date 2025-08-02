@@ -1,0 +1,173 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+
+<div class="desk">
+  <h1><span>† <i>BLANK ON MY DESK</i> †</span></h1>
+
+  <ol class="grid">
+    <li>
+      <img src="images/1.png" alt="">
+    </li>
+    <li>
+      <img src="images/9.png" alt="">
+    </li>
+    <li>
+      <img src="images/4.png" alt="">
+    </li>
+    <li>
+      <img src="images/3.png" alt="">
+    </li>
+    <li>
+      <img src="images/5.png" alt="">
+    </li>
+
+    <li>
+      <img src="images/bunko.png" alt="">
+    </li>
+    <li>
+      <img src="images/2.png" alt="">
+    </li>
+    <li>
+      <img src="images/8.png" alt="">
+    </li>
+    <li>
+      <img src="images/book_1.png" alt="">
+    </li>
+    <li>
+      <img src="images/book_2.png" alt="">
+    </li>
+    <li>
+      <img src="images/book_3.png" alt="">
+    </li>
+    <li>
+      <img src="images/book_4.png" alt="">
+    </li>
+  </ol>
+  <ol class="text">
+    <li>ぺんてる エフ水彩</li>
+    <li>まとまるくんと鉛筆/芯削り</li>
+    <li>クリップ</li>
+    <li>ミスノン：いい匂い。寺西化学工業のマジックインキが超気に入っている。(ギター万年筆もおすすめ)</li>
+    <li>なんだかんだで昔ながらの糊が使いやすい</li>
+    <li>一軍の文庫本たち</li>
+    <li>筆</li>
+    <li>普通のインクとコーパルワニス(フィキサチーフ用)</li>
+    <li>仏像の見方 見分け方 ガンダーラ仏像はトーハクへ</li>
+    <li>特集：藤田嗣治、全所蔵作品展示。</li>
+    <li>最古の物語</li>
+    <li>安西水丸 村上春樹</li>
+  </ol>
+</div>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 100vw;
+  }
+
+  header {
+    display: none;
+  }
+
+  .desk {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #000000;
+
+
+    h1,
+    .text {
+      padding: 0 .5rem;
+    }
+
+    h1 {
+      margin: 0;
+      border: solid 1px black;
+      border-bottom: none;
+      text-align: center;
+      background-color: palegreen;
+      font-size: min(2rem, 6vw);
+    }
+
+    .text {
+      border: solid 1px black;
+      border-top: none;
+      background: #fff;
+      min-height: min(10rem, 25vh);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+
+  .grid {
+    width: 100%;
+    height: auto;
+    min-height: 70vh;
+    image-rendering: pixelated;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(20em, 30vw), auto));
+    background: no-repeat center bottom / 85% url(images/desk.png), center/ 2vh url(images/desk_bg.png);
+    background-color: white;
+    border: solid 1px black;
+    gap: 0 2rem;
+    justify-items: center;
+    padding-bottom: 30vh;
+
+    li {
+      position: relative;
+      list-style: none;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: .5rem;
+      }
+    }
+  }
+
+  .desk ol {
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+    li {
+      counter-increment: item;
+      list-style: none;
+    }
+
+    li::before {
+      content: "[" counter(item) "] ";
+    }
+  }
+
+  .desk ::-webkit-scrollbar {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+  }
+
+  .desk ::-webkit-scrollbar-thumb {
+    background: 0 0;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+    background-color: rgb(255, 189, 165);
+    border-left: solid 1px;
+
+  }
+
+  .desk ::-webkit-scrollbar-track {
+    background-color: white;
+    background-image: none;
+    background-size: 1rem 1rem;
+    border-left: solid 1px;
+  }
+</style>
+
+{{ end }}

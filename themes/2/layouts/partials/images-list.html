@@ -1,0 +1,70 @@
+
+{{/*  <div class="sort">
+  <span>≡↓</span>
+</div>  */}}
+    {{ range where .Pages "Section" "images" }}
+        <a href="{{.RelPermalink }}" class="images-item">
+            <div class="image-wrap">
+              {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
+              <img src="/placehold.png" data-src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+              {{ else }}
+              <img src="/placehold.png" data-src="/placehold.png" width="500" height="500" loading="lazy">
+
+              {{ end }}
+            </div>
+
+          <div class="images-info">
+            <div>
+              <div class="title">{{ .Title }}{{ if .Draft }}《下書き》{{ end }}</div>
+              <div class="category">{{ .Params.subTitle }}</div>
+            </div>
+            
+            <div class="description">{{ .Params.description }}</div>
+            </div>
+ 
+           <div class="count">
+            <div class="count-page">
+              {{ if eq ( sub (.File.ContentBaseName | strings.Count "") 1 ) 1}}
+                  {{ int .File.ContentBaseName | printf "%#o" }}
+              {{ else }}
+                  {{/*  {{ int .File.ContentBaseName  }}  */}}
+              {{ end }}
+            </div>
+  
+
+            <div class="count-image">
+                {{ $headings := slice }}
+    
+                {{range .Pages }}
+                {{ $heading := findRE `#+\s(.*)` .RawContent }}
+                {{ $headings = $headings | append $heading}}
+              {{end}}
+              {{ $heading := findRE `#+\s(.*)` .RawContent }}
+              {{ $headings = $headings | append $heading}}
+              {{ range $headings }}
+              {{/*  {{trim . "\n# "}}  */}}
+              {{ end }}
+              {{/*  {{with .Params.count_images }}
+              {{ range seq . }}＊{{ end }}
+              {{ else }} 
+             
+              {{with findRE `(?s)!\[.*?\]\(.*?\)`  .RawContent  }} 
+              {{ range . }}＊{{ end }}
+              {{ end }}
+              {{ end }}  */}}
+  
+              {{ $pages := where site.Pages "Section" "eq" "images" }}
+              {{ with $t := .Page.Params.imgTags }}
+                    {{/*  {{  index site.Params.images $t | safeHTML}}  */}}
+              {{ end }}
+
+            </div>
+           </div>
+
+        </a>
+
+        
+
+ 
+   
+    {{ end }}

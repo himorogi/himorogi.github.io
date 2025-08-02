@@ -1,0 +1,9 @@
+<div class="images-grid">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="images-posts" title="{{ .Title }}">
+      <img src="images/{{ .Params.thumb }}" title="{{ .Title }}" loading="lazy">
+      <!-- <span>{{ .Title }}</span> -->
+        <!-- <span class="new" data-date="{{.Date | time.Format .Site.Params.date_format_data}}"></span> -->
+    </a>
+    {{ end }}
+  </div>

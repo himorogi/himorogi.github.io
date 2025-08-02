@@ -1,0 +1,47 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+
+  <h1>{{ .Title }}</h1>
+                  
+  {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+  {{ range (where $pages "Params.update" "ne" false).GroupByDate "2006"  }}
+      
+
+      <h2>{{ .Key }}</h2>
+      {{ range .Pages.GroupByDate "1月" }}
+      <h3>{{ .Key }}</h3>
+
+          {{ range .Pages.GroupByDate "2006-01-02" }}
+
+
+        
+            <dl>
+              <dt><h4><time>{{ .Key }}</time></h4></dt>
+            <dd>
+   
+             {{ range .Pages }}
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ if .Draft }}《下書き》{{ end }} - {{ .CurrentSection.LinkTitle }}<br>
+            {{ end }}
+          </dd>
+          </dl>
+          {{ end }}
+          
+      </table>
+      {{ end }}
+
+      {{ end }}
+
+</main>
+<style>
+  th:first-of-type,
+td:first-of-type {
+
+  width: 13ch;
+}
+
+</style>
+{{ end }}

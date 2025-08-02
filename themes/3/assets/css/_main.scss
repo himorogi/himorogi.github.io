@@ -1,0 +1,566 @@
+:root {
+    --bg1: #FFFCF0;
+    --bg2: #F2F0E5;
+
+    --tx1: #100F0F;
+    --tx2: #6F6E69;
+    --lk1: #4385BE;
+    --lk2: #8B7EC8;
+    --ac1: #BC5215;
+    --ac2: #E8705F;
+    --ac3: #F6E2A0;
+    --ac4: #BFE8D9;
+    --border: solid 0.02rem #6F6E69;
+    --font-main: "Zen Old Mincho";
+    --font-mono: Consolas, "Courier New", Courier, Monaco, monospace;
+    --font-weight: 500;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-weight: var(--font-weight);
+    text-decoration-thickness: 0.02rem;
+    font-family: var(--font-main);
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+ul,
+ol,
+dl,
+hr,
+p,
+figure,
+pre,
+blockquote,
+details,
+table,
+article,
+form,
+video {
+    margin: 1rem 0;
+}
+
+b,
+strong {
+    color: var(--ac1);
+}
+
+b,
+strong,
+input[type=button]
+.btn {
+        -webkit-text-stroke: .01em;
+}
+
+[disabled] {
+    visibility: hidden;
+}
+.monospace {
+    font-family: var(--font-mono);
+}
+code,
+pre,
+kbd,
+samp,
+ {
+    font-size: .95rem;
+    font-family: var(--font-mono);
+    font-weight: 400;
+}
+
+figcaption,
+small,
+footer,
+sub,
+sup,
+ruby rt,
+.breadcrumb,
+.footnotes {
+    font-size: .8em !important;
+}
+
+body {
+    max-width: 62em;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    background: var(--bg1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--tx1);
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+header,footer{
+    letter-spacing: 0.1em;
+            line-height: 1.2;
+
+}
+header {
+    margin-bottom: 3rem;
+    nav {
+        display: flex;
+        align-items:center;
+        h1 {
+            margin: 0;
+        }
+        a, a:visited{
+            color: var(--tx1);
+        }
+            a {
+                text-decoration: none;
+                font-size: Max(1.15rem, 1.25vw);
+
+                &:active {
+                    color: var(--ac2);
+                }
+            }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: .3rem .8rem;
+            flex-wrap: wrap;
+            flex: 2 1 auto;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+@keyframes rotate {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+footer {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+section,
+article {
+
+    h1:first-child,
+    h2:first-child,
+    h3:first-child {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+article {
+    max-width: 55rem;
+    margin: 0 auto;
+
+    figure{
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+    }
+}
+
+section {
+    border-bottom: var(--border);
+    padding: 1rem 0;
+
+
+    &:first-of-type {
+        border-top: var(--border);
+    }
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 2em 0 1rem;
+
+    &.title {
+        text-align: center;
+        text-wrap: balance;
+
+    }
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: justify;
+    img{
+        text-align: start;
+    }
+    &:empty {
+        display: none;
+    }
+}
+
+a {
+    color: var(--lk1);
+    text-decoration: none;
+    &:visited{
+        color: var(--lk2);
+    }
+    &:active {
+        color: var(--ac2);
+    }
+    
+    sup {
+        color: var(--tx1);
+    }
+}
+
+abbr {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    cursor: help;
+
+    &:hover,
+    &:active {
+        &::after {
+            content: "：" attr(text);
+            text-decoration: none;
+            font-size: .9rem;
+        }
+    }
+}
+
+mark {
+    background: var(--ac3);
+}
+
+code,
+kbd {
+    background: var(--ac4);
+}
+
+pre>code {
+    background: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    thead {
+        font-size: .9rem;
+    }
+
+    tr {
+        border-bottom: var(--border);
+    }
+
+    th,
+    td {
+        padding: .5rem;
+        border: none;
+        figure{
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+
+
+ul,
+ol {
+    padding-left: 2rem;
+
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+    margin-left: -1em;
+
+    li::before {
+        counter-increment: section;
+        content: counters(section, "–") ". ";
+    }
+}
+
+
+blockquote {
+    border-left: var(--border);
+    padding-left: 2rem;
+
+}
+
+
+:is(ol, ul) :is(ol, ul) {
+    margin: 0;
+}
+
+ul,
+ol,
+th,
+td {
+    text-align: start;
+    word-break: auto-phrase;
+    // vertical-align: unset;
+}
+
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+    border: var(--border);
+    padding: 1rem;
+}
+
+#TableOfContents {
+    border: var(--border);
+    padding: 1rem;
+
+    ul,
+    ol {
+        margin: 0;
+    }
+
+    &::before {
+        content: "もくじ";
+    }
+}
+
+
+svg {
+    vertical-align: text-top;
+}
+
+form {
+    max-width: 100%;
+
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    border: none;
+    // background: transparent;
+    outline: none;
+    // border-left: var(--border);
+    max-width: 100%;
+    min-height: 1em;
+    padding: .2rem;
+    margin: 0 .5rem .5rem 0;
+    border-radius: 0;
+    border: var(--border);
+
+    &:focus-within {
+        background: var(--bg2);
+    }
+}
+
+input[type=button], .btn {
+    font-size: 1rem;
+    color: var(--bg1);
+    border: none;
+    background: var(--ac2);
+    padding: .5rem 1rem;
+    margin: 0 .5rem .5rem 0;
+    border-radius: .2rem;
+    cursor: pointer;
+        letter-spacing: 0.05em;
+
+    &:active{
+    color: var(--bg1);
+    }
+    &::before,
+    &::after {
+        content: "";
+    }
+    sup{
+        color: var(--bg1);
+    }
+}
+
+button,
+a button,
+.button {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    color: var(--lk1);
+    padding: 0;
+    background: transparent;
+    margin: 0 .5rem .5rem 0;
+    text-decoration: none;
+    line-height: 1;
+    white-space: nowrap;
+        letter-spacing: 0.05em;
+
+    &::before,
+    &::after {
+        color: var(--tx1);
+        font-size: 1.2rem;
+    }
+
+    &::before {
+        content: "{";
+        margin-right: .5rem;
+    }
+
+    &::after {
+        content: "}";
+        margin-left: .5rem;
+    }
+
+    &:active {
+        color: var(--ac2);
+    }
+}
+
+figure {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    figcaption {
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .4s;
+    object-fit: contain;
+    object-position: top;
+}
+
+
+img[data-src] {
+    opacity: 0;
+}
+
+hr {
+    border: none;
+    height: auto;
+    margin: 1rem auto;
+    width: 100%;
+    border-bottom: var(--border);
+
+
+    &.dinkus {
+        width: 60%;
+        margin: 1rem auto;
+        border: none;
+
+        &::after {
+            content: "＊　＊　＊　＊　＊";
+            display: block;
+            text-align: center;
+            color: var(--tx1);
+            font-size: .9rem;
+
+            text-align-last: justify;
+        }
+    }
+}
+
+details {
+    margin-left: 1rem;
+
+    summary {
+        margin-left: -1rem;
+        cursor: pointer;
+    }
+
+    *:first-of-type {
+        margin-top: 0;
+    }
+
+    *:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.footnotes {
+    display: flex;
+    justify-content: flex-end;
+
+    hr {
+        display: none;
+    }
+
+    p {
+        margin: 0;
+        display: inline;
+    }
+
+    ol {
+        margin: 0;
+        padding-left: 0;
+        width: Min(70vw, 25rem);
+
+        li {
+            display: flex;
+
+            &::before {
+                counter-increment: section;
+                content: "※" counter(section) "： ";
+                flex: 0 0 auto;
+            }
+        }
+    }
+
+}
+
+video{
+    max-width: 100%;
+}
+.footnote-ref {
+    &::before {
+        content: "※";
+    }
+
+    &::after {
+        content: "";
+    }
+}
+
+
+blockquote,
+.footnote-ref {
+    figure {
+        width: fit-content;
+        margin: 0;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
+
+  {{/* Favicon */}}
+  {{/*  <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico?v=4">  */}}
+
+  {{/* CSS */}}
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "css/style.scss" | toCSS $opts | minify | fingerprint }}
+  {{/*  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">  */}}
+  {{ end }}
+
+</head>
+
+<body>
+
+  {{ block "main" . }}
+  {{ end }}
+
+</body>
+
+</html>

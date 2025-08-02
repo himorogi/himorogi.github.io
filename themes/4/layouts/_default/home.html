@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <p>
+        <small>lastmod:
+            {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+            {{ range first 1 (where $pages "Params.update" "ne" false) }}
+            <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time> - {{ .FirstSection.LinkTitle }}
+            {{ end }}</small>
+    </p>
+    <figure>
+        <img src="/images/topimg.jpg" width="1200" height="850" loading="lazy">
+    </figure>
+
+    <hr>
+<h2>About</h2>
+{{ with .GetPage "/about" }}
+  {{ .Content }}
+{{ end }}
+<h3>Bookmarks</h3>
+{{ with .GetPage "/about/bookmarks" }}
+  {{ .Content }}
+{{ end }}
+{{ end }}

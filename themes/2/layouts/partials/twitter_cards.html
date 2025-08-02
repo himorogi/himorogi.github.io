@@ -1,0 +1,46 @@
+{{/*  {{- $images := partial "_funcs/get-page-images" . }}  */}}
+{{ $page := .Permalink }}
+{{ $regex := `<img\s.*?data-src="(.+?)".*?>` }}
+
+{{- if $images := .Params.thumb }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ $page }}{{ .Params.thumb }}">
+{{- else if $images := findRESubmatch $regex (.Content | safeHTML)}}
+    {{ range $images | first 1}}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ index . 1 }}">
+    {{ end }}
+{{ else if $images :=  .Resources.ByType "image" }}
+    {{ range $images | last 1 }}
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ $page }}{{ .Name }}">
+    {{ end }}
+{{ else }}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ $.Site.BaseURL }}images/topimg.jpg">
+{{- end }}
+
+{{- with or .Title site.Title site.Params.title | plainify }}
+  <meta name="twitter:title" content="{{ $.Site.Title}} | {{ . }}">
+{{- end }}
+
+{{- if .IsHome }}
+  <meta property="og:description" content="{{  .Site.Params.site.description }}">
+{{- else }}
+{{- with or .Description .Summary | plainify | htmlUnescape }}
+  <meta name="twitter:description" content="{{ trim . "\n\r\t " | strings.Truncate 30 }}">
+{{- end }}
+{{- end }}
+
+{{- $twitterSite := "" }}
+{{- with site.Params.social }}
+  {{- if reflect.IsMap . }}
+    {{- with .twitter }}
+      {{- $content := . }}
+      {{- if not (strings.HasPrefix . "@") }}
+        {{- $content = printf "@%v" . }}
+      {{- end }}
+      <meta name="twitter:site" content="{{ $content }}">
+    {{- end }}
+  {{- end }}
+{{- end }}

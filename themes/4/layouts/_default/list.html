@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+{{.Content}}
+{{ if eq .Section "posts"}}
+
+{{ range .Pages }}
+<h3>{{.Title}}</h3>
+
+<time>{{ .Date | time.Format .Site.Params.date_format }}</time>
+{{.Content}}
+<br><br><br>
+{{end}}
+{{else}}
+{{ range .Pages }}
+
+<a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+
+{{end}}
+
+{{ end }}
+{{ end }}
