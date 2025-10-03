@@ -1,0 +1,14 @@
+{{ .Page.Scratch.Set "footnote" (slice "") }}
+
+{{ replaceRE `(\*{3,})` "$1\n{.dinkus}" .RawContent | .RenderString | safeHTML }}
+
+{{ if  .Page.Scratch.Get "footnote" }}
+<div class="footnotes">
+    <hr>
+    <ol>
+        {{ range .Page.Scratch.Get "footnote" }}
+        {{ . | safeHTML }}
+        {{end}}
+    </ol>
+    </div>
+{{ end }}

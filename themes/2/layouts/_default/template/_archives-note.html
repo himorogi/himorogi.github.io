@@ -1,0 +1,40 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+<div style="background: url(giphy-1.gif);height: 5em;"></div>
+    <h1>{{ .Title }}</h1>
+    スクラップ、ドローイング、メモなど
+    <br><br>
+    <div style="
+        column-count: 4;
+        column-fill: balance;
+        column-gap: 0;
+    ">
+
+        {{ range .Resources.Match "*.jpg" | collections.Shuffle }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">
+        {{ end }}
+    </div>
+    <br><br>
+    <div style="background: url(giphy-1.gif);height: 5em;"></div>
+
+</main>
+<style>
+    body {
+        max-width: 100%;
+        background: rgb(34, 86, 255);
+        color: yellow;
+    }
+    header{
+    display: none;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        object-position: center;
+    }
+</style>
+{{ end }}

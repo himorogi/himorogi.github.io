@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&display=swap');
+
+
+:root {
+    --bg1: #FFF;
+    --bg2: #BDC3C7;
+
+    --tx1: #000000;
+    --tx2: #a0a0a0;
+    --lk1: #4877e3;
+    --ac1: #e2453f;
+    --ac2: #08a100;
+    --ac3: #f9ffa7;
+    --border: solid 0.02rem var(--tx2);
+    --font-main: "Zen Old Mincho", serif;
+    --font-mono: Consolas, "Courier New", Courier, Monaco, monospace;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration-thickness: 0.02rem;
+    font-family: var(--font-main);
+    font-weight: 500;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+
+
+ul,
+ol,
+dl,
+hr,
+p,
+figure,
+pre,
+blockquote,
+details,
+table,
+article,
+form,
+video {
+    margin: 1rem 0;
+}
+
+
+code,
+pre,
+kbd,
+samp {
+    font-size: .95rem;
+    font-family: var(--font-mono);
+}
+
+figcaption,
+small,
+footer,
+sub,
+sup {
+    font-size: .8em;
+}
+
+body {
+    max-width: 62em;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    background: var(--bg1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--tx1);
+}
+
+
+header,
+footer {
+    letter-spacing: 0.07em;
+    line-height: 1.2;
+
+}
+
+header {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: Max(2rem, 5vw);
+
+
+        h1 {
+            margin: 0;
+            flex: 1 1 auto;
+
+            img {
+                margin: .4rem 0 0 0;
+                max-width: 100%;
+                max-height: Max(2.5rem, 3.5vw);
+                filter: invert(1);
+            }
+        }
+
+
+        a {
+            text-decoration: none;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: .5rem;
+            flex-grow: 2;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+footer {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 2em 0 1rem;
+}
+
+
+h1 {
+    font-size: 1.5rem;
+
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: var(--lk1);
+    text-decoration: none;
+
+
+    &:active {
+        color: var(--ac1);
+    }
+
+
+    sup {
+        color: var(--tx1);
+    }
+}
+
+abbr {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    cursor: help;
+
+    &:hover,
+    &:active {
+        &::after {
+            content: "：" attr(text);
+            text-decoration: none;
+            font-size: .9rem;
+        }
+    }
+}
+
+
+mark {
+    background: var(--ac3);
+}
+
+q{
+    &::before{
+        content: "“";
+    }
+
+    &::after{
+        content: "”";
+    }
+}
+code,
+kbd {
+    color: var(--ac2);
+}
+
+pre>code {
+    background: transparent;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    thead {
+        font-size: .8rem;
+    }
+
+    th,
+    td {
+        border: var(--border);
+        padding: .5rem;
+        &:empty {
+            border: none;
+        }
+    }
+
+}
+
+
+
+ul,
+ol {
+    padding-left: 2rem;
+
+}
+
+ul {
+    list-style: disc;
+
+}
+
+ol {
+    counter-reset: section;
+    list-style-type: none;
+    margin-left: -1em;
+
+    li::before {
+        counter-increment: section;
+        content: counters(section, "–") ". ";
+
+    }
+}
+
+
+blockquote {
+    border-left: var(--border);
+    padding-left: 1rem;
+}
+
+
+
+ul,
+ol,
+th,
+td {
+    text-align: start;
+    word-break: auto-phrase;
+}
+
+
+pre {
+    max-width: 100%;
+    overflow: auto;
+    border: var(--border);
+    padding: 1rem;
+}
+
+
+form {
+    max-width: 100%;
+
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    min-height: 1em;
+    padding: .2rem;
+    margin: 0 .5rem .5rem 0;
+    border-radius: 0;
+    border: var(--border);
+
+    &:focus-within {
+        border-color: var(--lk1);
+    }
+}
+
+button,
+a button,
+input[type=button] {
+    font-size: .95rem;
+    color: var(--tx1);
+    border: none;
+    background: var(--lk1);
+    padding: .5rem 1rem;
+    margin: 0 .5rem .5rem 0;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+
+    sup {
+        color: var(--bg1);
+    }
+}
+
+
+figure {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        max-height: 90vh;
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+    }
+
+    figcaption {
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .4s;
+    object-fit: contain;
+    object-position: top;
+
+}
+
+
+img[data-src] {
+    opacity: 0;
+}
+
+hr {
+    border: none;
+    height: auto;
+    margin: 1rem auto;
+    width: 100%;
+    border-bottom: var(--border);
+}
+
+details {
+    margin-left: 1rem;
+
+    summary {
+        margin-left: -1rem;
+        cursor: pointer;
+    }
+
+    *:first-of-type {
+        margin-top: 0;
+    }
+
+    *:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+video {
+    max-width: 100%;
+}

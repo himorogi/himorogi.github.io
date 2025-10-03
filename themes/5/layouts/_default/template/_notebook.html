@@ -1,0 +1,42 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+<main class="{{ .Section }}-main">
+  <article>
+
+
+    <h1>etc... :-)</h1>
+
+    <h2>Notebook</h2>
+    <p>自分用メモ、記録など</p>
+    <table>
+      <thead>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        {{ range(where .Site.RegularPages "Path" "like" `^/etc/notebook`).Reverse}}
+
+        <tr>
+          <th>
+            <a href="{{ .RelPermalink }}">
+              <span>
+                {{ .Title }}
+              </span>
+            </a>
+          </th>
+          <td>
+            {{ .Params.description }}
+
+          </td>
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>
+</article>
+</main>
+
+{{ end }}

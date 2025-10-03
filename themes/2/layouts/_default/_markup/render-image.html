@@ -1,0 +1,50 @@
+{{- .Page.Scratch.Set "imgPath" ( print "/" .Page.File.Dir .Destination ) }}
+
+
+{{- if $original := .Page.Resources.GetMatch ( print .Destination "*") -}}
+
+  {{- if gt $original.Width 200 -}}
+
+    <figure>
+    <img src="/placehold.png" data-src="{{$original.RelPermalink}}" width="{{ $original.Width }}" height="{{ $original.Height }}" loading="lazy" style="aspect-ratio: {{ $original.Width }}/ {{ $original.Height }};">
+      {{- with .PlainText }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+      {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+
+    </figure>
+
+  {{- else }}
+  {{ $base64 := readFile $original.RelPermalink | base64Encode}}
+    <img src="data:image/{{ $original.MediaType.SubType}};base64,{{ $base64 }}" width="{{ $original.Width }}" height="{{ $original.Height }}" loading="lazy">
+  {{- end }}
+
+{{  else if  strings.HasPrefix .Destination "http" }}
+
+{{ $url := .Destination  | safeURL }}
+{{ if $original := resources.GetRemote $url }}
+<figure>
+  <img src="/placehold.png" data-src="{{$original.RelPermalink}}" width="{{ $original.Width }}" height="{{ $original.Height }}" loading="lazy" style="aspect-ratio: {{ $original.Width }}/ {{ $original.Height }};">
+  
+    {{- with .PlainText }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+    {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+
+  </figure>
+
+
+{{ end }}
+
+{{- else }}
+
+    {{- $original := images.Config ( print "/content/"  .Page.File.Dir .Destination ) }}
+  
+    {{- if $original }}
+      <figure>
+        <img src="/placehold.png" data-src="{{.Page.Scratch.Get "imgPath"}}" width="{{ $original.Width }}" height="{{ $original.Height }}" loading="lazy" style="aspect-ratio: {{ $original.Width }}/ {{ $original.Height }};">
+  
+          {{- with .PlainText }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+          {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+
+        </figure>
+
+    {{- end }}
+{{- end }}
+

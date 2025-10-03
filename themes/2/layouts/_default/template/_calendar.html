@@ -1,0 +1,294 @@
+{{ define "main" }}
+{{ .Content }}
+<div id="calendar"></div>
+
+
+{{ $sj_data := dict }}
+{{ with $sj_file := "syukujitsu.csv" }}
+{{ with resources.Get $sj_file }}
+{{ with $sj_data = . | transform.Unmarshal }}
+
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ $sj_matches := dict }}
+
+{{ range $k, $v := $sj_data }}
+
+{{ range $v}}
+{{ $regex := print "^" now.Year}}
+{{ if findRE $regex . }}
+
+{{ $sj_matches = merge $sj_matches (dict $v . ) }}
+
+{{ end }}
+{{end }}
+
+{{ end }}
+
+
+{{ $sk_data := dict }}
+{{ with $file := "sk2025.csv" }}
+{{ with resources.Get $file }}
+{{ $sk_data = . | transform.Unmarshal }}
+{{ end }}
+{{ end }}
+
+{{ $sk_matches := dict }}
+
+{{ range $k, $v := after 2 $sk_data }}
+
+{{ $sk_matches = merge $sk_matches (dict (index $v 3) (index $v 1)) }}
+
+{{ end }}
+
+
+<style>
+    @page {
+        margin: 5mm;
+        size: A4 portrait;
+    }
+
+    *,
+    *::before,
+    *::after {
+        margin: 0 !important;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        border: none;
+        line-height: 1;
+    }
+
+    body {
+        background: white;
+        margin: 0 auto !important;
+        color: #000000;
+    }
+
+    header,footer {
+        display: none;
+    }
+
+    #calendar {
+        display: flex;
+        box-sizing: border-box;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 16mm;
+        min-height: 100vh;
+        padding: 0 1mm;
+        
+
+        div:first-child {
+            
+        }
+
+
+    h1 {
+        font-size: 8mm;
+        padding-bottom: 3mm;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    span:not(:first-child),
+    span>span {
+        font-weight: 300;
+        font-size: 4mm;
+    }
+
+    span:last-child {
+        text-align-last: end;
+    }
+    
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
+
+    table tr {
+
+        border-bottom: 0.1mm solid #00000021;
+        vertical-align: baseline;
+        
+
+    }
+    tr:first-child td {
+        border: none;
+    }
+    td {
+        border-right: 0.1mm solid #00000030;
+        padding: .5mm 1mm !important;
+        height: calc(calc(50vh / 6) - 4mm);
+        font-size: 4mm;
+        position: relative;
+
+        &:first-child {
+            border-left: 0.1mm solid #00000030;
+        }
+
+        &:not(.is-disabled)::before {
+            content: "";
+            position: absolute;
+            border-bottom: 0.1mm dashed #00000020;
+
+            opacity: .5;
+            width: 100%;
+            left: 0;
+            top: 50%;
+
+        }
+
+        span {
+            &::after {
+                content: attr(text);
+                opacity: .5;
+                font-size: 2mm;
+                font-weight: 300;
+                display: inline-block;
+                vertical-align: top;
+                padding: .5mm 2mm;
+                color: #000000;
+
+
+            }
+        }
+    }
+
+    tr:first-child td {
+        height: 5mm;
+        text-align: center;
+        font-size: 3mm;
+        font-weight: 400;
+        opacity: .5;
+        color: #000;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    td:first-child,
+    .syuku {
+        color: #E53935;
+    }
+
+    td:last-child {
+        color: #1565C0;
+    }
+
+    td.is-disabled {
+        opacity: .1;
+        color: #000;
+    }
+
+    }
+
+
+    @media print {
+        body {
+            max-width: 100%;
+            padding: 0;
+            background: white !important;
+
+        }
+
+        p,ul {
+            display: none;
+        }
+
+    }
+</style>
+<script>
+    const weeks = ['日', '月', '火', '水', '木', '金', '土']
+    const date = new Date()
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const monthStr = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const config = {
+        show: 2,
+    }
+
+    function showCalendar(year, month) {
+        for (i = 0; i < config.show; i++) {
+            const calendarHtml = createCalendar(year, month)
+            const sec = document.createElement('div')
+            sec.innerHTML = calendarHtml
+            document.querySelector('#calendar').appendChild(sec)
+
+            month++
+            if (month > 12) {
+                year++
+                month = 1
+            }
+        }
+    }
+
+    function createCalendar(year, month) {
+        const startDate = new Date(year, month - 1, 1) // 月の最初の日を取得
+        const endDate = new Date(year, month, 0) // 月の最後の日を取得
+        const endDayCount = endDate.getDate() // 月の末日
+        const lastMonthEndDate = new Date(year, month - 1, 0) // 前月の最後の日の情報
+        const lastMonthendDayCount = lastMonthEndDate.getDate() // 前月の末日
+        const startDay = startDate.getDay() // 月の最初の日の曜日を取得
+        let dayCount = 1 // 日にちのカウント
+        let calendarHtml = '' // HTMLを組み立てる変数
+
+        calendarHtml += '<h1><span>' + month + '&nbsp;&nbsp;<span>' + monthStr[month] + '</span></span><span>' + year + '</span></h1>'
+        calendarHtml += '<table>'
+
+        // 曜日の行を作成
+        for (let i = 0; i < weeks.length; i++) {
+            calendarHtml += '<td>' + weeks[i] + '</td>'
+        }
+
+        for (let w = 0; w < 6; w++) {
+            calendarHtml += '<tr>'
+
+            for (let d = 0; d < 7; d++) {
+                if (w == 0 && d < startDay) {
+                    // 1行目で1日の曜日の前
+                    let num = lastMonthendDayCount - startDay + d + 1
+                    calendarHtml += '<td class="is-disabled">' + num + '</td>'
+                } else if (dayCount > endDayCount) {
+                    // 末尾の日数を超えた
+                    let num = dayCount - endDayCount
+                    calendarHtml += '<td class="is-disabled">' + num + '</td>'
+                    dayCount++
+                } else {
+                    calendarHtml += `<td data-date="${year}/${month}/${dayCount}">` + dayCount + '<span></span></td>'
+                    dayCount++
+                }
+            }
+            calendarHtml += '</tr>'
+        }
+        calendarHtml += '</table>'
+
+        return calendarHtml
+    }
+
+    showCalendar(year, month)
+
+    const syukujitsuList = { {{ range  $k, $v:= $sj_matches }}{{ $k }}: {{ range $k, $v := .}} {{ replace $k "休日" "振替休日" }} {{ end }}, {{ end }} };
+    const calenderDataDate = document.querySelectorAll('td[data-date]');
+    const sekkiList = { {{ range $k, $v:= $sk_matches }}{{ replaceRE `\s` "" $k }}: {{ $v }}, {{ end }} };
+
+    calenderDataDate.forEach((item, index) => {
+
+        if (1 < Object.keys(syukujitsuList).indexOf(item.dataset.date)) {
+            item.classList.add('syuku');
+            item.querySelector('span').setAttribute("text", syukujitsuList[item.dataset.date]);
+        }
+        if (1 < Object.keys(sekkiList).indexOf(item.dataset.date)) {
+            item.querySelector('span').setAttribute("sekki", sekkiList[item.dataset.date]);
+        }
+    });
+
+</script>
+{{/*  <script src="/js/moonage.js"></script>  */}}
+
+{{ end }}

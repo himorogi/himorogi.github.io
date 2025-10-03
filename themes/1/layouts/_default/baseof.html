@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon/favicon.ico?v=2">
+
+  <title>{{ block "title" . }}🍙 {{ .Site.Title }}{{ end }}</title>
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "css/style.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap" rel="stylesheet">
+
+<body>
+  <header>
+    <h1><a href="/">{{ .Site.Title }}</a></h1>
+
+    <!-- {{- range site.Menus.main }}
+  <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+    {{ .Name }}
+  </a>&nbsp;&nbsp;
+{{- end }} -->
+  </header>
+  {{ block "main" . }}
+  {{ end }}
+
+  {{ if not .IsHome }}
+  <div class="svg-icon">
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-left"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
+      </svg>
+      <a href="/">Homeへもどる</a>
+    </p>
+  </div>
+  {{ end }}
+  <!-- <footer>
+      <small>Powered by Hugo & Github pages</small>
+    </footer> -->
+</body>
+
+</html>

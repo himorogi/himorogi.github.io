@@ -1,0 +1,45 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+
+
+  
+
+  {{ if eq .Section "works" }}
+  
+  {{ if .Params.build }}
+    {{partial "article.html" .}}
+
+  {{ else }}
+     {{partial "images-list.html" .}}
+  {{ end }}
+
+
+  {{ else if eq .Section "memo" }}
+    {{partial "posts-list.html" .}}
+  {{ else if eq .Section "about" }}
+  <article>
+     {{ partial "render-content.html" . }}
+  </article>
+ 
+
+  {{ else }}
+
+     {{ partial "render-content.html" . }}
+  {{ range .Pages }}
+  <div>
+    <span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </span>
+  </div>
+  {{ end }}
+
+
+  {{ end }}
+
+</main>
+
+
+{{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+  <article>
+    <h1>{{.Title}}</h1>
+    {{/*  <h1 class="marquee">
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+    </h1>  */}}
+    {{ partial "render-content.html" . }}
+
+  </article>
+</main>
+
+{{ end }}

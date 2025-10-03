@@ -1,0 +1,268 @@
+
+:root {
+    --bg1: #fff;
+    --bg2: #ecf0f1;
+    --bg3: #bdc3c7;
+    --tx1: #34495e;
+    --tx2: #7f8c8d;
+    --lk1: #0095f8;
+    --lk2: #126195;
+    --ac1: #27ae60;
+    --ac2: #e74c3c;
+    --ac3: #f1c40f;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration-thickness: .08em;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+
+ul,
+ol,
+dl,
+p,
+hr,
+figure,
+pre,
+blockquote,
+details,
+aside,
+table, {
+    margin: 1rem 0;
+}
+
+pre,
+code,
+kbd,
+samp,
+time {
+    font-family: ui-monospace, Menlo, Monaco, "Segoe UI Mono", "Roboto Mono", "Consolas", monospace;
+}
+
+pre,
+code {
+    color: var(--ac1);
+}
+
+footer,
+aside,
+del,
+blockquote,
+figcaption,
+time,
+kbd,
+.breadcrumb  {
+    color: var(--tx2);
+}
+
+figcaption,
+aside,
+small,
+footer,
+.breadcrumb {
+    font-size: .9rem !important;
+}
+
+body {
+    max-width: 50em;
+    margin: auto;
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.65;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--tx1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    word-break: break-word;
+    text-align: justify;
+}
+
+header {
+    background: var(--bg2);
+    padding: 2rem 1rem;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    margin: -2rem calc(0px - (50vw - 50%))  1.5rem;
+
+    h1 {
+        margin: 0;
+        font-size: 1.3rem;
+
+        a {
+            text-decoration: none;
+            color: var(--tx1);
+        }
+    }
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 1.5em 0 1rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    // text-wrap: balance;
+    text-align: start;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+ul,
+ol {
+    padding-left: 2rem;
+    // list-style-position: inside;
+}
+:is(dir, menu, ol, ul) :is(dir, menu, ul) {
+    margin: 0;
+}
+
+dl {
+    padding-left: 1rem;
+
+    dd {
+        margin-left: 1rem;
+    }
+}
+
+
+a {
+    color: var(--lk1);
+    &:has(img){
+        display: inline-block;
+    line-height: 1;
+    }
+    &:hover{
+        color: var(--lk2);
+    }
+}
+
+mark{
+    background: var(--ac3);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+        border-bottom: .08rem solid var(--bg3);
+    }
+
+    th,
+    td {
+        padding: 1rem;
+    }
+}
+
+
+blockquote {
+    padding-left: 2rem;
+}
+
+
+[type=button],
+[type=reset],
+[type=submit],
+button,
+a button,
+.button {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    color: var(--tx1);
+    background: var(--bg2);
+    padding: .5rem 1rem;
+    margin: 0 .5rem .5rem 0;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    &.outline{
+        background: var(--bg1);
+        border: .08rem solid var(--bg3);
+
+    }
+}
+
+figure {
+    line-height: 1.2;
+    margin: auto;
+    text-align: center;
+    figcaption {
+        text-align: center;
+    }
+}
+
+img {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    background: var(--bg3);
+    display: inline-block;
+
+    box-shadow: 0 0 0 .03rem var(--bg3);
+
+}
+
+hr {
+    border: none;
+    height: 0;
+    border-bottom: .2rem solid var(--bg3);
+}
+
+details {
+    margin-left: 1rem;    
+    summary {
+        margin-left: -1rem;
+        cursor: pointer;
+    }
+    *:first-of-type{
+        margin-top: 0;
+    }
+    *:last-of-type{
+        margin-bottom: 0;
+    }
+}
+
+#TableOfContents{
+    float: right;
+    min-width: 10em;
+    margin: 1.5rem ;
+
+    ul,ol{
+        list-style: none;
+        margin: 0;
+        &:first-child{
+            padding-left: 1rem;
+        }
+    }
+    >*{
+        clear: both;
+    }
+}

@@ -1,0 +1,25 @@
+{{ define "title" }}
+{{ .Title }}  🍙 {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<div class="breadcrumb">
+  <a href="/">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;{{ .Parent.Title }}&nbsp;-&nbsp;{{ .Page.Title }}
+</div>
+<main>
+  
+
+    <h2>#{{ .Title }}</h2>
+    {{ .Title }}の記事一覧<br><br>
+
+
+    {{ range .Pages }}
+    <div class="blog-posts">
+      <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time>
+      <span>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </span>
+    </div>
+    {{ end }}
+
+  </main>
+  {{ end }}

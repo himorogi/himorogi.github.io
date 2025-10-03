@@ -1,0 +1,85 @@
+<article>
+{{/*  <div class="sort">
+  <span>≡↓</span>
+</div>  */}}
+{{ $groups := slice  "illustration" "animation" "drawing" "past"}}
+
+
+  {{ range $group := $groups }}  
+ {{ with where site.Pages "Params.imgTags" $group }}
+    <h1>
+      <span>
+      {{ title $group }}
+      {{ if hasPrefix "past" $group }} works{{end}}
+    </span>
+  </h1>  
+
+<table>
+      <thead>
+        <th></th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+
+         {{ range . }}
+         <tr>
+            <td style="width: min(10rem,25vw);">
+              <a href="{{ .RelPermalink }}">
+                           {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
+              <img src="/placehold.png" data-src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" style="aspect-ratio:1/1;object-fit:cover;">
+              {{ end }}
+              </a>
+
+            </td>
+
+          <th style="min-width: 7rem;max-width:15rem;">
+            <a href="{{ .RelPermalink }}">
+              <span>
+                {{ .Title }}
+              </span>
+            </a>
+          </th>
+          <td style="font-size:.8rem;line-height:1.5;">
+            <span>{{ .Params.description }}</span>
+
+          </td>
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>
+{{/*  
+         {{ range . }}
+
+
+          <a href="{{.RelPermalink }}" class="images-item">
+            <div class="image-wrap">
+              {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
+              <img src="/placehold.png" data-src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy">
+              {{ else }}
+              <img src="/placehold.png" data-src="/placehold.png" width="500" height="500" loading="lazy">
+
+              {{ end }}
+            </div>
+
+          <div class="images-info">
+            <div>
+              <div class="title">{{ .Title }}{{ if .Draft }}《下書き》{{ end }}</div>
+            </div>
+            
+            <div class="description">{{ .Params.description }}</div>
+            </div>
+ 
+           
+        </a>
+        {{ end }}
+        {{/*  {{ end }}  */}}
+       {{/*  </div>   */}}
+  {{ end }}
+{{ end }}
+
+
+        
+
+</article>

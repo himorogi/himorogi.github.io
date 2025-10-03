@@ -1,0 +1,66 @@
+{{ define "main" }}
+<main class="{{ .Section }}-main">
+  <article>
+    <h1 class="marquee">
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+      <span>ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</span>
+    </h1>
+    {{ partial "render-content.html" . }}
+
+  </article>
+</main>
+
+
+<style>
+  .marquee {
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1.45rem;
+    height: 1.5em;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 2em;
+    }
+  }
+
+  .marquee span {
+    display: inline-block;
+    width: max-content;
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s steps(30, jump-end) infinite both;
+    right: 0;
+    line-height: 1;
+  }
+
+  .marquee span:last-of-type {
+    animation: marquee2 15s steps(30, jump-end) infinite both;
+
+  }
+
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
+
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+{{ end }}

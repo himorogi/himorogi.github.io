@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+
+<main>
+
+  <figure>
+    <img src="/images/topimg.jpg" width="1200" height="850" loading="lazy"
+      style="max-height: min(50vh, 30rem);object-fit: cover; object-position: center;">
+
+  </figure>
+
+  {{/* <p>
+    <small>lastmod:
+      {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+      {{ range first 1 (where $pages "Params.update" "ne" false) }}
+      <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time> - {{ .FirstSection.LinkTitle }}
+      {{ end }}</small>
+  </p> */}}
+
+  <h2>Update</h2>
+  <table>
+    <thead>
+      <th style="width: 15ch;">date</th>
+      <th>title</th>
+      <th style="min-width:10ch;">section</th>
+    </thead>
+    <tbody>
+      {{ range first 6 (where .Site.RegularPages "Section" "ne" "memo") }}
+
+      <tr>
+        <th style="font-weight: normal;">
+          {{ .Date | time.Format .Site.Params.date_format_2 }}
+        </th>
+        <td>
+          <a href="{{ .RelPermalink }}">
+            <span>
+              {{ .Title }}
+            </span>
+          </a>
+        </td>
+        <td>
+          <span>{{.FirstSection.LinkTitle}}</span>
+        </td>
+      </tr>
+
+      {{ end }}
+    </tbody>
+  </table>
+
+</main>
+
+{{ end }}

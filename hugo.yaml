@@ -1,0 +1,85 @@
+baseURL: https://himorogi.github.io
+languageCode: ja
+title: HMLOG
+hasCJKLanguage: true
+# sectionPagesMenu: main
+theme: 5
+
+params:
+  date_format: "2006年1月2日"
+  date_format_2: "2006-01-02"
+  date_format_data: "2006/01/02 15:04"
+  site:
+    baseurl: https://himorogi.github.io
+    description: 
+
+    
+frontmatter:
+  lastmod:
+  - lastmod
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+  path: page
+
+disableKinds:
+- rss
+- sitemap
+- taxonomy
+
+taxonomies:
+  # tag: tags
+  # year: year
+  # main: main
+  # imgTag: imgTags
+
+permalinks:
+  term:
+    tags: /posts/:slug/
+    year: /posts/:slug/
+
+
+
+markup:
+  tableOfContents:
+    endLevel: 6
+    ordered: true
+    startLevel: 2
+  goldmark:
+      extensions:
+        linkify: false
+        extras:
+          delete:
+            enable: true
+          insert:
+            enable: true
+          mark:
+            enable: true
+          subscript:
+            enable: false
+          superscript:
+            enable: false
+
+      parser:
+        attribute:
+          block: true
+          title: true
+      # wrapStandAloneImageWithinParagraph: false
+      renderHooks:
+        image:
+          enableDefault: true
+      renderer:
+        hardWraps: true
+        unsafe: true
+# menus:
+#   main:
+#   - name: Others
+#     pageRef: /others
+#     pre: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+
+
+privacy:
+  youTube:
+    disable: false
+    privacyEnhanced: true

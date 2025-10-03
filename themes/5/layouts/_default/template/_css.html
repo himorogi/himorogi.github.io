@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    {{/*
+    <link rel="stylesheet" href="/etc/css/{{.Params.css}}"> */}}
+    {{ with resources.GetMatch ( print "/etc/css/" .Params.css ) }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+
+    {{ end }}
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <h1>HEADER</h1>
+
+            <ul>
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li><a href="#">Nav 3</a></li>
+                <li><a href="#">Nav 4</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="{{ .Section }}-main">
+        <article>
+            <h1 id="見出し-h1">見出し H1</h1>
+            <h2 id="見出し-h2">見出し H2</h2>
+            <h3 id="見出し-h3">見出し H3</h3>
+            <h4 id="見出し-h4">見出し H4</h4>
+            <h5 id="見出し-h5">見出し H5</h5>
+            <h6 id="見出し-h6">見出し H6</h6>
+            <h2 id="インラインテキスト">インラインテキスト</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>斜体</em></td>
+                        <td><strong>太字</strong></td>
+                        <td><u>下線</u></td>
+                        <td><del>打ち消し</del></td>
+                    </tr>
+                    <tr>
+                        <td><mark>マーク</mark></td>
+                        <td><span style="text-emphasis:sesame;">圏点</span></td>
+                        <td><ruby> ルビ <rp>(</rp>
+                                <rt>ruby</rt>
+                                <rp>)</rp>
+                            </ruby></td>
+                        <td><code>code</code></td>
+                    </tr>
+                    <tr>
+                        <td><sub>下付き文字</sub></td>
+                        <td><sup>上付き文字</sup></td>
+                        <td><q>引用</q></td>
+                        <td><abbr text="略語">略語</abbr></td>
+                    </tr>
+                    <tr>
+                        <td><a herf="#">リンク</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="段落">段落</h2>
+            <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。
+            </p>
+            <h2 id="引用ブロック">引用ブロック</h2>
+            <blockquote>
+                <p>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </blockquote>
+            <h2 id="リスト">リスト</h2>
+            <h3 id="順序付きリスト">順序付きリスト</h3>
+            <ol>
+                <li>リスト項目
+                    <ol>
+                        <li>リスト項目
+                            <ol>
+                                <li>リスト項目</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <h3 id="順序なしリスト">順序なしリスト</h3>
+            <ul>
+                <li>リスト項目
+                    <ul>
+                        <li>リスト項目
+                            <ul>
+                                <li>リスト項目</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="説明リスト">説明リスト</h3>
+            <dl>
+                <dt>名前</dt>
+                <dd>説明テキスト
+                    <dl>
+                        <dt>名前</dt>
+                        <dd>説明テキスト</dd>
+                    </dl>
+                </dd>
+            </dl>
+            <h2 id="テーブル">テーブル</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>#</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>やくもたつ</td>
+                        <td>いずもやえがき　つまごみに</td>
+                        <td>やえがきつくる　そのやえがきを</td>
+                    </tr>
+                    <tr>
+                        <td>あさかやま</td>
+                        <td>かげさへみゆる　やまのゐの</td>
+                        <td>あさきこころを　わがおもはなくに</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 id="画像">画像</h2>
+            <p>
+
+
+
+            </p>
+            <figure>
+                <img src="/20181020_Reutte_ZugSpitze_SAG_DSC00927a_PtrQS_364532571178340152.jpg" width="4499"
+                    height="2531" loading="lazy" style="aspect-ratio: 4499 / 2531; cursor: pointer;">
+                <figcaption>Photo by PtrQs, CC BY-SA 4.0 , ウィキメディア・コモンズ</figcaption>
+            </figure>
+
+
+
+
+            <p></p>
+            <h2 id="コードブロック">コードブロック</h2>
+            <pre><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+            <h2 id="水平線">水平線</h2>
+            <hr class="dinkus">
+            <hr>
+            <h2 id="折りたたみ要素">折りたたみ要素</h2>
+            <details open="">
+                <summary>ラベル</summary>
+                テキストテキストテキストテキストテキスト
+            </details>
+            <h2 id="フォーム">フォーム</h2>
+
+            <form>
+                <input placeholder="input text" type="text"><br>
+                <textarea placeholder="textarea" rows="5" cols="33"></textarea><br>
+                <button>ボタン</button>
+            </form>
+
+
+        </article>
+    </main>
+
+    <footer>
+        FOOTER
+    </footer>
+</body>
+
+</html>

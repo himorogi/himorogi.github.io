@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }} {{ .Site.Title }} | {{ .Title }}{{ end }}</title>
+
+  {{/* Favicon */}}
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.ico?v=4">
+
+  {{/* CSS */}}
+  {{ $opts := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+  {{ with resources.Get "css/style.scss" | toCSS $opts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+  {{/* Google Fonts */}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500&display=swap" rel="stylesheet">
+  {{/* Opengraph */}}
+  {{ partial "opengraph.html" . }}
+  {{ partial "twitter_cards.html" . }}
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <h1>
+        {{/* <a href="/">{{ .Site.Title }}</a> */}}
+        <a href="/"><img src="/logo.png" alt="{{ .Site.Title }}"></a>
+      </h1>
+
+      <ul>
+
+        {{- range site.Menus.main }}
+        <li>
+          <a {{ with .Params.class -}} class="{{ . }}" {{ end -}} href="{{ .URL }}">
+            {{- with .Pre }}{{.}}{{ else }}{{ .Name }}{{ end -}}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+
+    </nav>
+  </header>
+  {{ block "main" . }}
+  {{ end }}
+
+
+  <footer>
+    {{if and (.IsHome) ( not hugo.IsServer) }}
+    <iframe id="access-counter" frameborder="0" loading="lazy" scrolling="no" style="opacity: 0.25;"
+      data-url="https://script.google.com/macros/s/AKfycbzFOn5qCyMwbAi4z6QfO8AWQG-GOG1vpKZsCltA3MtIfnIMF0RKY7tBcIZrO3Y1FwblPQ/exec{{ if not hugo.IsServer }}?url=https://himorogi.github.io{{ end }}"></iframe>
+
+    {{ end }}
+  </footer>
+
+  {{if .IsHome}}
+  <script>
+    iframe = document.getElementById('access-counter');
+    iframe.setAttribute('src', iframe.getAttribute('data-url'));
+  </script>
+  {{ end }}
+
+  {{ with resources.Get "js/main.js" }}
+  {{ with . | fingerprint "sha256" }}
+  <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+  {{ end }}
+</body>
+
+</html>

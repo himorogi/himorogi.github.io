@@ -1,0 +1,46 @@
+{{ define "title" }}
+{{ .Title }} - {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+
+<main class="{{ .Section }}-main">
+  <article>
+
+    <h1><span>Art Book</span></h1>
+    <h1><span>折り本</span></h1>
+    Mini book from one sheet of paper.
+    <h1><span>フリーペーパー</span></h1>
+
+    <img src="nightFlight.png" alt="nightFlight" style="max-width: Max(20rem,20vw);" width="1500" height="258"
+      loading="lazy"><br>
+    <table>
+      <thead>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        {{ range where .Site.RegularPages "CurrentSection.LinkTitle" "nightFlight"}}
+
+        <tr>
+          <th style="width: 6ch;">
+            {{/* <a href="/text/nightflight/{{ .Params.file }}" type="application/pdf">
+              <span>
+                {{ .Title }}
+              </span>
+            </a> */}}
+            <a href="{{ .RelPermalink }}">{{ replace .Title "nightFlight" ""}}</a>
+          </th>
+          <td>
+
+            {{ .Params.description }}
+            
+          </td>
+
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>
+</main>
+
+{{ end }}

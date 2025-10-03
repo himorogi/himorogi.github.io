@@ -1,0 +1,94 @@
+<article>
+
+  <h1><span>{{.Title}}</span></h1>
+  {{/* <div class="sort">
+    <span>≡↓</span>
+  </div> */}}
+  {{ $groups := slice "illustration" "animation" "drawing" }}
+
+
+  {{/* {{ range $group := $groups }}
+  {{ with where site.Pages "Params.imgTags" $group }}
+  <button data-tag="{{ $group }}">{{ title $group }}</button>
+
+  {{ end }}
+  {{ end }} */}}
+  {{ range $group := $groups }}
+  {{ with where site.Pages "Params.imgTags" $group }}
+  <h2 class="title"><span>{{ title $group }}</span></h2>
+
+  <table>
+    <thead>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      {{/* {{ range where .Site.Pages "Path" "like" `(?i)^\/works/main` }} */}}
+      {{/* {{ if and (ne .RelPermalink "/works/") (ne .RelPermalink "/works/log/") }} */}}
+
+      {{ range .}}
+
+      <tr>
+        <td style="width: min(25vw, 8rem);">
+          <a href="{{.RelPermalink }}">
+            {{- with .Page.Resources.GetMatch ( print .Params.thumb "*") -}}
+            <img src="/placehold.png" data-src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+              loading="lazy" style="aspect-ratio:1/1;object-fit: cover;">
+            {{ end }}
+          </a>
+        </td>
+        <td>
+          <a href="{{.RelPermalink }}">{{ .Title }}{{ if .Draft }}《下書き》{{ end }}</a>
+          <div style="font-size: .9rem;">
+            {{ .Params.description }}
+          </div>
+        </td>
+
+
+      </tr>
+
+      {{ end }}
+    </tbody>
+  </table>
+  {{ end }}
+
+  {{ end }}
+  <h2 class="title"><span>Personal news paper</span></h2>
+  <table>
+    <thead>
+      <th></th>
+      <th></th>
+    </thead>
+    <tbody>
+      {{ range where .Site.Pages "Path" "like" `(?i)^\/works/nightFlight` }}
+
+      <tr>
+        <th style="width: 10ch;">
+          <a href="{{ .RelPermalink }}">{{ replace .Title "nightFlight" ""}}</a>
+        </th>
+        <td style="font-size: .9rem;">
+
+
+          {{ .Params.description }}
+
+        </td>
+
+      </tr>
+
+      {{ end }}
+    </tbody>
+  </table>
+
+  {{/* <br><br>
+  <p>
+
+    LOG :
+    {{ range where (where .Site.Pages "Section" "images") "Parent.Path" "/images/log" }}
+    <a href="{{.RelPermalink }}">{{.Title}}</a> |
+    {{ end}}
+  </p> */}}
+  </div>
+  {{/* {{ end }} */}}
+  {{/* {{ end }} */}}
+
+</article>

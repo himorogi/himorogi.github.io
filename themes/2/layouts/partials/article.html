@@ -1,0 +1,71 @@
+
+  <article>
+    {{ if .Draft }}《下書き》{{ end }}
+
+    <h1 class="title">{{ .Title }}</h1>
+
+    {{ if eq .Params.toc true }}{{ .TableOfContents }}{{ end }}
+
+    {{ range .Pages }}
+      {{ partial "render-content.html" . }}
+    {{ end }} 
+    {{ partial "render-content.html" . }}
+
+
+    <aside class="page-info">
+        {{if ne .Params.update false }}
+      <div>
+         <span><time>{{ .Date | time.Format .Site.Params.date_format }}</time></span>
+        {{if .Params.lastmod }}
+            <span> / <time>{{ .Lastmod | time.Format .Site.Params.date_format}}</time></span>
+        {{ end }}
+      </div>
+      {{ end }}
+        {{ with .GetTerms "tags" }}
+          <div>
+              {{ range . }}
+                  <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>&nbsp;
+              {{ end }}
+          </div>
+          {{ end }}
+          {{ if eq .Section "posts"}}
+          <div>
+                {{ .Content | strings.CountRunes }}文字
+          </div>
+          {{ end }}
+      </aside>
+
+
+  </article>
+
+  {{ if eq .Section "images"}}
+  {{/*  <div class="single-page-nav">
+
+    {{ with  .Parent.Pages.Next . }}
+        <a href="{{ .RelPermalink }}">
+            <span>←</span>
+        </a>
+    {{ else }}
+        <span disabled>←</span>
+    {{ end }}
+
+    {{ $currentPath := .Page.RelPermalink}}
+      {{ range .Parent.Pages}}
+          {{if eq $currentPath .RelPermalink}}
+          <span class="num">
+           {{ mod (float .File.ContentBaseName) 10  | printf "%#o" }}
+        </span>  
+        {{ end }}
+      {{ end }}
+
+
+      {{ with  .Parent.Pages.Prev . }}
+          <a href="{{ .RelPermalink }}">
+              <span>→</span>
+          </a>
+      {{ else }}
+          <span disabled>→</span>
+      {{ end }}
+
+  </div>  */}}
+  {{ end }}

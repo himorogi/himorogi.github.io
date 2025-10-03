@@ -1,0 +1,216 @@
+.external {
+    &::after {
+        content: '↗︎';
+    }
+}
+
+.card {
+    padding: 1rem;
+    border: var(--border);
+    outline: var(--border);
+    outline-offset: -.25rem;
+
+    *:first-child {
+        margin-top: 0;
+    }
+}
+  .marquee {
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1.45rem;
+    height: 1.5em;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 2em;
+    }
+  }
+
+  .marquee span {
+    display: inline-block;
+    width: max-content;
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s steps(30, jump-end) infinite both;
+    right: 0;
+    line-height: 1;
+        overflow: hidden;
+
+  }
+
+  .marquee span:last-of-type {
+    animation: marquee2 15s steps(30, jump-end) infinite both;
+
+  }
+
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(0%);
+
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.single-page-nav,
+.paginater {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    a,
+    span {
+        text-decoration: none;
+    }
+
+    .num {
+        flex: 3;
+        font-size: 1rem;
+
+    }
+
+}
+
+
+
+.page-info {
+    display: flex;
+    font-size: .8rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+
+    div {
+
+        &:first-child {
+            margin-right: .5rem;
+        }
+
+        &:last-child {
+            flex: 2 1 5em;
+            text-align: end;
+        }
+    }
+}
+
+
+.float {
+    float: left;
+    width: 50%;
+
+    +* {
+        clear: both;
+    }
+
+}
+
+#zoom-image {
+    background: var(--tx1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+
+    img {
+        max-width: 100vw;
+        max-height: 100dvh;
+
+    }
+}
+
+#TableOfContents {
+    border: var(--border);
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    ul,
+    ol {
+        margin: 0;
+    }
+
+    &::before {
+        content: "もくじ";
+    }
+}
+
+#scroll-to-top {
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#access-counter {
+    height: 1rem;
+    width: 20rem;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg1);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--lk1);
+}
+
+@media screen and (max-width: 60rem) {
+    body {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    header,
+    main,
+    footer {
+        flex: 0;
+
+    }
+
+    header {
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            h1{
+                text-align: unset;
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 30rem) {
+
+//     //     header nav ul{
+//     //         justify-content: right;
+//     //          li{
+//     //             flex:0 0 6ch;
+//     //     }
+//     // }
+// }

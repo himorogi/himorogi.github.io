@@ -1,0 +1,118 @@
+<article>
+<div class="posts-wrap">
+
+
+
+  {{ $paginator := .Paginate .Pages }}
+
+  {{ range $paginator.Pages }}
+    <section>
+      {{ if .Draft }}《下書き》{{ end }}
+    <h1 class="title">{{ .Title }}</h1>
+    {{ if in .RawContent "<!--more-->" }}
+      {{ .Summary }}
+      <p>
+      <a href="{{ .RelPermalink }}">
+       <button> 続きを読む</button>
+      </a>
+    </p>
+    {{ else }}
+          {{ partial "render-content.html" . }}
+
+    {{ end }}
+    
+    <aside class="page-info">
+
+      
+      <div>
+        <time>{{ .Date | time.Format .Site.Params.date_format }}</time>
+      </div>
+      {{ with .GetTerms "tags" }}
+      <div>
+        {{ range . }}
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>&nbsp;
+        {{ end }}
+      </div>
+      {{ end }}
+      <div>
+        {{ .Content | strings.CountRunes }}文字&nbsp;
+        <a href="{{ .RelPermalink }}">P</a>
+
+      </div>
+    </aside>
+  </section>
+  {{ end }}
+
+  {{ with $paginator }}
+    <nav class="paginater">
+
+      {{/*  {{ if not .HasPrev }}
+          <span disabled>F</span>
+      {{ else }}
+        {{ with .First }}
+         <a href="{{ .URL }}">F</a>
+        {{ end }}
+      {{ end }}  */}}
+      {{ if .HasPrev }}
+        <a href="{{ .Prev.URL }}">←</a>
+      {{ else }}
+        <span disabled>←</span>
+      {{ end }}
+
+      <span class="num">
+        {{ .PageNumber }} / {{ .TotalPages }}
+      </span>
+
+      {{ if .HasNext }}
+        <a href="{{ .Next.URL }}">→</a>
+      {{ else }}
+        <span disabled>→</span>
+      {{ end }}
+
+    {{/*  {{ if not .HasNext }}
+       <span disabled>L</span>
+    {{ else }}
+      {{ with .Last }}
+         <a href="{{ .URL }}"></a>
+      {{ end }}
+    {{ end }}  */}}
+
+     </nav>
+
+{{ end }}
+</div>
+{{/*  
+<div class="posts-side-widgets">
+  <div id="calendar"></div>
+  <div id="sun-moon">
+    <div id="moon"></div>
+    
+    <div id="sun">
+     <div id="sunrise">日の出：</div>
+     <div id="sunset">日の入：</div>
+    </div>
+  </div>
+</div>
+
+<div class="posts-side-tags">
+<h3>Tags</h3>
+{{ range $term, $taxonomy := .Site.Taxonomies.tags }}
+    <span>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}<sup>{{ .Count }}</sup></a>
+    </span>&nbsp;
+         
+{{ end }}
+<h3>Archives</h3>
+{{ range $term, $taxonomy := .Site.Taxonomies.year }}
+    <span>
+      <a href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+    </span>&nbsp;
+         
+{{ end }}
+<br><br>
+
+</div>
+
+
+<script src="/js/moonage.js"></script>  */}}
+</article>

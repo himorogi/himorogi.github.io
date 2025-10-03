@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+
+<main>
+
+  {{/*  <p>
+  Lastmod ::
+        {{ range first 1 .Site.RegularPages }}
+        {{ .Date | time.Format .Site.Params.date_format_2 }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        |   {{.FirstSection.LinkTitle}}
+        {{ end }}
+</p>  */}}
+    <figure >
+        <img src="/placehold.png" data-src="/images/topimg_6.png" width="1200" height="850" loading="lazy" style="max-height: min(40vh, 30rem);object-fit: cover; object-position: center;">
+            
+    </figure>
+
+    {{/*  <figure>
+        <img src="/images/topimg.jpg" width="1200" height="850" loading="lazy">
+    </figure>
+    <p>
+        <small>lastmod:
+            {{ $pages := where .Site.RegularPages "Section" "ne" "posts" }}
+
+            {{ range first 1 (where $pages "Params.update" "ne" false) }}
+            <time>{{ .Date | time.Format .Site.Params.date_format_2 }}</time> - {{ .FirstSection.LinkTitle }}
+            {{ end }}</small>
+    </p>    */}}
+
+ 
+<h2>Update</h2>
+ <table>
+      <thead>
+        <th style="width: 14ch;">date</th>
+        <th>title</th>
+        <th style="width: 8ch;">section</th>
+      </thead>
+      <tbody>
+        {{ range first 5 ( where .Site.RegularPages "Params.update" "ne" false) }}
+
+        <tr>
+          <th style="font-weight: normal;">
+{{ .Date | time.Format .Site.Params.date_format_2 }}
+          </th>
+          <td>
+            <a href="{{ .RelPermalink }}">
+              <span>
+                {{ .Title }}
+              </span>
+            </a>
+          </td>
+          <td style="width: 9ch;">
+            <span style="font-size:.8rem">
+              {{.FirstSection.LinkTitle}}
+            </span>
+            
+          </td>
+        </tr>
+
+        {{ end }}
+      </tbody>
+    </table>  
+<br><br>
+<p class="notebook">
+  <a href="/notebook">
+   NOTEBOOK
+  </a>
+</p>
+</main>
+
+{{ end }}
