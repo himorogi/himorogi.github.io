@@ -43,7 +43,7 @@ weight: 1
 
 [世界史の窓](https://www.y-history.net/)
 [今日のほしぞら(暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)
-[Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/)
+[Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/) - 歯のある膣
 [シンボルの源泉](https://www.typography.or.jp/symbol/)
 
 <!-- Special Thanks
