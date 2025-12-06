@@ -51,7 +51,8 @@ weight: 1
 [星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript -->
 
 [![](bookmarks/ribose.png)](https://ribo.zone "RIBOSE")[![](bookmarks/c4a0c668acf9c140.png)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](bookmarks/azbtn.gif)](https://www.aozora.gr.jp "青空文庫")
-[![](bookmarks/yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](bookmarks/sousaku_banner8831.gif)](https://tters.jp/s "創作サーチ")[![](https://compslink.jp/head/img/bnn05.png)](https://compslink.jp "COMPASS LINK")
+[![](bookmarks/yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](bookmarks/sousaku_banner8831.gif)](https://tters.jp/s "創作サーチ")
+[COMPASS LINK](https://compslink.jp "")
 {style="text-align: start;"}
 
 ***
