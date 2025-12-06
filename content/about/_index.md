@@ -52,7 +52,7 @@ weight: 1
 [![](bookmarks/ringo-2.gif)](https://sites.google.com/view/ringo-kids "リンゴーの同盟"
 )[![](bookmarks/yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")
 
-[![](https://warakosu.syarasoujyu.com/wara_ban.JPG)](https://warakosu.syarasoujyu.com/ "笑う小宇宙の館")
+[![](bookmarks/wara_ban_13795198374070892549.jpg)](https://warakosu.syarasoujyu.com/ "笑う小宇宙の館")
 [![](bookmarks/yarukinonai_site.jpg)](https://reissuerecords.net/ "米津玄師 official site「REISSUE RECORDS」")
 
 
