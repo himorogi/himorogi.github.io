@@ -28,7 +28,10 @@
     {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
 
   </figure>
-
+  {{- else }}
+  {{ $base64 := readFile $original.RelPermalink | base64Encode}}
+    <img src="data:image/{{ $original.MediaType.SubType}};base64,{{ $base64 }}" width="{{ $original.Width }}" height="{{ $original.Height }}" loading="lazy">
+  {{- end }}
 
 {{ end }}
 
