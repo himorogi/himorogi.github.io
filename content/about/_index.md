@@ -10,7 +10,7 @@ weight: 1
 ---
 
 絵を描いたり何かを作ったり。\_φ(･\_･ 
-記録程度に置いている意味のないサイトです。サイトは[Hugo](https://gohugo.io)で作成しています。
+サイトは[Hugo](https://gohugo.io)で作成しています。
 
 
 **SiteName：** HMLOG
@@ -51,7 +51,7 @@ weight: 1
 [星が好きな人のための新着情報](https://news.local-group.jp) 月齢計算 JavaScript -->
 
 [![](bookmarks/ribose.png)](https://ribo.zone "RIBOSE")[![](bookmarks/c4a0c668acf9c140.png)](https://seesaawiki.jp/ryakuji/ "略字データベースまとめwiki")[![](bookmarks/azbtn.gif)](https://www.aozora.gr.jp "青空文庫")
-[![](bookmarks/yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](bookmarks/sousaku_banner8831.gif)](https://tters.jp/s "創作サーチ")
+[![](bookmarks/yorozu_banner6.gif)](http://kn1.x0.to/ "よろずりんく")[![](bookmarks/sousaku_banner8831.gif)](https://tters.jp/s "創作サーチ")[![](https://compslink.jp/head/img/bnn05.png)](https://compslink.jp "COMPASS LINK")
 {style="text-align: start;"}
 
 ***
@@ -61,5 +61,10 @@ weight: 1
 [国立国会図書館デジタルコレクション](https://dl.ndl.go.jp)
 
 
-[口語訳聖書](https://pebutty.net/kougo/) [死者の書の呪文](https://en.wikipedia.org/wiki/List_of_Book_of_the_Dead_spells) [ギルガメシュ叙事詩](http://www.aurora.dti.ne.jp/~eggs/gil.htm) 
+[口語訳聖書](https://pebutty.net/kougo/) 
+[死者の書の呪文](https://en.wikipedia.org/wiki/List_of_Book_of_the_Dead_spells)
+128. Spell for worshipping Osiris.[70]
+129. Refers to the barque of Ra.[71]
+
+[ギルガメシュ叙事詩](http://www.aurora.dti.ne.jp/~eggs/gil.htm) 
 [ガリバー旅行記](https://www.aozora.gr.jp/cards/000912/files/4673_9768.html) [よだかの星](https://www.aozora.gr.jp/cards/000081/files/473_42318.html)
