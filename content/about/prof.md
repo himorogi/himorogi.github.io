@@ -10,7 +10,9 @@ update: false
 ### 欲しいもの
 - Hikari Saint Seiya- Araki Shingo artbook
 - 世界シンボル大事典 大修館書店
-- (神々の熱き戦いのVHS)
+- 神々の熱き戦いのVHS
+- 荒木伸吾 遺作漫画本「SOURIRE D’ENFANCE」
+- まんだらけZENBU No.16
 
 ### 好きな漫画
 - あしたのジョー　梶原一騎 ちばてつや
