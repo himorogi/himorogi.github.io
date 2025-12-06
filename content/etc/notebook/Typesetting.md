@@ -21,4 +21,4 @@ description: カリグラフィーからバウハウスまで（未完）
 
 [Ichthys](https://en.wikipedia.org/wiki/Ichthys)
 
-- [紙の寸法 - Wikipedia](https://ja.wikipedia.org/wiki/%E7%B4%99%E3%81%AE%E5%AF%B8%E6%B3%95#%E5%9B%BD%E9%9A%9B%E7%9A%84%E3%81%AA%E7%B4%99%E3%81%AE%E5%AF%B8%E6%B3%95%E3%81%AE%E8%A6%8F%E6%A0%BC)
+![🐟](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Stele_Licinia_Amias_Terme_67646.jpg/960px-Stele_Licinia_Amias_Terme_67646.jpg)
