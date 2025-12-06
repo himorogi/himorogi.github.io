@@ -45,6 +45,16 @@ weight: 1
 [今日のほしぞら(暦計算室)](https://eco.mtk.nao.ac.jp/cgi-bin/koyomi/skymap.cgi)
 [Barbaroi!](http://web.kyoto-inet.or.jp/people/tiakio/) - 歯のある膣
 [シンボルの源泉](https://www.typography.or.jp/symbol/)
+[SOURIRE](https://www.arakishingo.com/)
+
+[水滴の力](https://burlywoodstripe.sakura.ne.jp/)
+
+[![](bookmarks/ringo-2.gif)](https://sites.google.com/view/ringo-kids "リンゴーの同盟"
+)[![](bookmarks/yururing.png)](https://sites.google.com/view/yuruyuru-heigh-ho/ "ゆる〜いウェブリング")
+
+[![](https://warakosu.syarasoujyu.com/wara_ban.JPG)](https://warakosu.syarasoujyu.com/ "笑う小宇宙の館")
+[![](bookmarks/yarukinonai_site.jpg)](https://reissuerecords.net/ "米津玄師 official site「REISSUE RECORDS」")
+
 
 <!-- Special Thanks
 [Sunset and sunrise times API](https://sunrise-sunset.org/api) 日の出日の入り時間 API 
